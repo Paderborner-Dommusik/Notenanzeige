@@ -8,8 +8,8 @@
     <ProjectGuid>{752C27BA-E092-455F-9B3F-1221E13FAE40}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MidiWatcher</RootNamespace>
-    <AssemblyName>MidiWatcher</AssemblyName>
+    <RootNamespace>DoPaNoZe_View</RootNamespace>
+    <AssemblyName>DoPaNoZe_View</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>

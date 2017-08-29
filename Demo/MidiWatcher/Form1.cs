@@ -1,15 +1,10 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using Sanford.Multimedia;
 using Sanford.Multimedia.Midi;
 
-namespace MidiWatcher
+namespace DoPaNoZe_View
 {
     public partial class Form1 : Form
     {
@@ -26,7 +21,7 @@ namespace MidiWatcher
 
         protected override void OnLoad(EventArgs e)
         {
-            if(InputDevice.DeviceCount == 0)
+            if (InputDevice.DeviceCount == 0)
             {
                 MessageBox.Show("No MIDI input devices available.", "Error!",
                     MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -43,9 +38,9 @@ namespace MidiWatcher
                     inDevice.SysCommonMessageReceived += HandleSysCommonMessageReceived;
                     inDevice.SysExMessageReceived += HandleSysExMessageReceived;
                     inDevice.SysRealtimeMessageReceived += HandleSysRealtimeMessageReceived;
-                    inDevice.Error += new EventHandler<ErrorEventArgs>(inDevice_Error);                    
+                    inDevice.Error += new EventHandler<ErrorEventArgs>(inDevice_Error);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Error!",
                         MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -54,11 +49,11 @@ namespace MidiWatcher
             }
 
             base.OnLoad(e);
-        }            
+        }
 
         protected override void OnClosed(EventArgs e)
         {
-            if(inDevice != null)
+            if (inDevice != null)
             {
                 inDevice.Close();
             }
@@ -74,7 +69,7 @@ namespace MidiWatcher
             {
                 inDevice.StartRecording();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
@@ -87,7 +82,7 @@ namespace MidiWatcher
                 inDevice.StopRecording();
                 inDevice.Reset();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
@@ -101,7 +96,7 @@ namespace MidiWatcher
 
         private void HandleChannelMessageReceived(object sender, ChannelMessageEventArgs e)
         {
-            context.Post(delegate(object dummy)
+            context.Post(delegate (object dummy)
             {
                 channelListBox.Items.Add(
                     e.Message.Command.ToString() + '\t' + '\t' +
@@ -115,11 +110,11 @@ namespace MidiWatcher
 
         private void HandleSysExMessageReceived(object sender, SysExMessageEventArgs e)
         {
-            context.Post(delegate(object dummy)
+            context.Post(delegate (object dummy)
             {
                 string result = "\n\n"; ;
 
-                foreach(byte b in e.Message)
+                foreach (byte b in e.Message)
                 {
                     result += string.Format("{0:X2} ", b);
                 }
@@ -130,7 +125,7 @@ namespace MidiWatcher
 
         private void HandleSysCommonMessageReceived(object sender, SysCommonMessageEventArgs e)
         {
-            context.Post(delegate(object dummy)
+            context.Post(delegate (object dummy)
             {
                 sysCommonListBox.Items.Add(
                     e.Message.SysCommonType.ToString() + '\t' + '\t' +
@@ -143,7 +138,7 @@ namespace MidiWatcher
 
         private void HandleSysRealtimeMessageReceived(object sender, SysRealtimeMessageEventArgs e)
         {
-            context.Post(delegate(object dummy)
+            context.Post(delegate (object dummy)
             {
                 sysRealtimeListBox.Items.Add(
                     e.Message.SysRealtimeType.ToString());

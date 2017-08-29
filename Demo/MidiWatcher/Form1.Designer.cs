@@ -1,4 +1,4 @@
-namespace MidiWatcher
+namespace DoPaNoZe_View
 {
     partial class Form1
     {
@@ -28,16 +28,17 @@ namespace MidiWatcher
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.channelListBox = new System.Windows.Forms.ListBox();
             this.channelMessageGroupBox = new System.Windows.Forms.GroupBox();
             this.startButton = new System.Windows.Forms.Button();
             this.stopButton = new System.Windows.Forms.Button();
             this.sysExGroupBox = new System.Windows.Forms.GroupBox();
+            this.sysExRichTextBox = new System.Windows.Forms.RichTextBox();
             this.systemCommonGroupBox = new System.Windows.Forms.GroupBox();
             this.sysCommonListBox = new System.Windows.Forms.ListBox();
             this.sysRealtimeGroupBox = new System.Windows.Forms.GroupBox();
             this.sysRealtimeListBox = new System.Windows.Forms.ListBox();
-            this.sysExRichTextBox = new System.Windows.Forms.RichTextBox();
             this.channelMessageGroupBox.SuspendLayout();
             this.sysExGroupBox.SuspendLayout();
             this.systemCommonGroupBox.SuspendLayout();
@@ -92,6 +93,14 @@ namespace MidiWatcher
             this.sysExGroupBox.TabStop = false;
             this.sysExGroupBox.Text = "SysEx Messages";
             // 
+            // sysExRichTextBox
+            // 
+            this.sysExRichTextBox.Location = new System.Drawing.Point(6, 19);
+            this.sysExRichTextBox.Name = "sysExRichTextBox";
+            this.sysExRichTextBox.Size = new System.Drawing.Size(355, 147);
+            this.sysExRichTextBox.TabIndex = 7;
+            this.sysExRichTextBox.Text = "";
+            // 
             // systemCommonGroupBox
             // 
             this.systemCommonGroupBox.Controls.Add(this.sysCommonListBox);
@@ -128,14 +137,6 @@ namespace MidiWatcher
             this.sysRealtimeListBox.Size = new System.Drawing.Size(258, 147);
             this.sysRealtimeListBox.TabIndex = 0;
             // 
-            // sysExRichTextBox
-            // 
-            this.sysExRichTextBox.Location = new System.Drawing.Point(6, 19);
-            this.sysExRichTextBox.Name = "sysExRichTextBox";
-            this.sysExRichTextBox.Size = new System.Drawing.Size(355, 147);
-            this.sysExRichTextBox.TabIndex = 7;
-            this.sysExRichTextBox.Text = "";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,8 +148,9 @@ namespace MidiWatcher
             this.Controls.Add(this.stopButton);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.channelMessageGroupBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Midi Watcher";
+            this.Text = "DoPaNoZe";
             this.channelMessageGroupBox.ResumeLayout(false);
             this.sysExGroupBox.ResumeLayout(false);
             this.systemCommonGroupBox.ResumeLayout(false);
