@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DoPaNoZe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="DoPaNoZe" Height="900" Width="1200">
     <Grid>
-        
+        <ListBox x:Name="midiInPortListBox" SelectionChanged="midiInPortListBox_SelectionChanged" Margin="10,10,0,0" Height="130" VerticalAlignment="Top"/>
+        <ListBox x:Name="midiOutPortListBox" SelectionChanged="midiOutPortListBox_SelectionChanged" Margin="10,145,10,0" Height="130" VerticalAlignment="Top"/>
     </Grid>
 </Window>
