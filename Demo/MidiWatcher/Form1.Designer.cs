@@ -141,7 +141,7 @@ namespace DoPaNoZe_View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 382);
+            this.ClientSize = new System.Drawing.Size(1460, 488);
             this.Controls.Add(this.sysRealtimeGroupBox);
             this.Controls.Add(this.systemCommonGroupBox);
             this.Controls.Add(this.sysExGroupBox);

@@ -1,0 +1,28 @@
+﻿<Window x:Class="DoPaNoZe_Main.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DoPaNoZe_Main"
+        mc:Ignorable="d"
+        Title="DoPaNoZe" Height="1000" Width="1920" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowState="Maximized">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,441,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,391,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,341,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,291,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="335" Margin="10,236,0,0" VerticalAlignment="Top" Width="175" Source="ressources/violinenschlüssel.png" Opacity="0.7"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,491,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,771,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,721,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,671,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,621,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="275" Margin="41,623,0,0" VerticalAlignment="Top" Width="144" Source="ressources/bassschlüssel.png" Opacity="0.7"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,821,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="185" Margin="348,10,0,0" VerticalAlignment="Top" Width="1266" Source="ressources/dopanoze_wide.png"/>
+
+
+
+
+    </Grid>
+</Window>
