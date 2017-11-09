@@ -1,8 +1,8 @@
 using System;
 using System.Threading;
 using System.Windows.Forms;
-using Sanford.Multimedia;
-using Sanford.Multimedia.Midi;
+using r3ne.Multimedia;
+using r3ne.Multimedia.Midi;
 
 namespace DoPaNoZe_View
 {
