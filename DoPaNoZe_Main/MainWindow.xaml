@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DoPaNoZe_Main"
         mc:Ignorable="d"
-        Title="DoPaNoZe" Height="1000" Width="1920" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowState="Maximized">
+        Title="DoPaNoZe" Height="1000" Width="1920" ResizeMode="NoResize" WindowState="Maximized">
     <Grid>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,441,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,391,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
@@ -19,7 +19,7 @@
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,621,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
         <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="275" Margin="41,623,0,0" VerticalAlignment="Top" Width="144" Source="ressources/bassschlüssel.png" Opacity="0.7"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,821,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="185" Margin="348,10,0,0" VerticalAlignment="Top" Width="1266" Source="ressources/dopanoze_wide.png"/>
+        <Image x:Name="image1" Height="185" Margin="348,10,299.6,0" VerticalAlignment="Top" Source="ressources/dopanoze_wide.png"/>
 
 
 
