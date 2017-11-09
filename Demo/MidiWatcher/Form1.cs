@@ -23,7 +23,7 @@ namespace DoPaNoZe_View
         {
             if (InputDevice.DeviceCount == 0)
             {
-                MessageBox.Show("No MIDI input devices available.", "Error!",
+                MessageBox.Show("Kein Gerät erkannt.", "Error!",
                     MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 Close();
             }
