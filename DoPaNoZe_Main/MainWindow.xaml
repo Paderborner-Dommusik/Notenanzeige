@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DoPaNoZe_Main"
         mc:Ignorable="d"
-        Title="DoPaNoZe" Height="1000" Width="1920" ResizeMode="NoResize" WindowState="Maximized" Loaded="OnLoad">
+        Title="DoPaNoZe" Height="1000" Width="1920" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
     <Grid>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,441,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,391,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>

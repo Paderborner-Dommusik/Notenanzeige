@@ -8,20 +8,21 @@ namespace DoPaNoZe_Main
 {
     class Controller
     {
+        private MIDIInterpreter midiinterpreterobj;
+
         public Controller()
         {
-
             
         }
 
         public void Run()
         {
-
+            midiinterpreterobj = MIDIInterpreter.GetInstance();
         }
 
         public void Stop()
         {
-
+            midiinterpreterobj.Destroy();
         }
     }
 }
