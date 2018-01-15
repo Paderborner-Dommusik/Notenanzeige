@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using r3ne.Multimedia;
 using r3ne.Multimedia.Midi;
 
-namespace DoPaNoZe_View
+namespace NoZe_View
 {
     public partial class Form1 : Form
     {

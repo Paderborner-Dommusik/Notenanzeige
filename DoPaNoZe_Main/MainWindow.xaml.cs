@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 
 
-namespace DoPaNoZe_Main
+namespace NoZe_Main
 {
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
@@ -33,6 +33,14 @@ namespace DoPaNoZe_Main
         public bool IsNoteOn(int midiID)
         {
             return false;
+        }
+
+        public void SwitchNote(int midiID)
+        {
+            if (IsNoteOn(midiID))
+                SetNoteOff(midiID);
+            else
+                SetNoteOn(midiID);
         }
     }
 }

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace DoPaNoZe_View
+namespace NoZe_View
 {
     static class Program
     {

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\MidiWatcher\De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "r3ne.Multimedia.Midi", "Source\r3ne.Multimedia.Midi.csproj", "{4269C72A-8D3A-4737-8F89-72EAA33EA9E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoPaNoZe_Main", "DoPaNoZe_Main\DoPaNoZe_Main.csproj", "{4820C1AF-3D35-4A9B-A1BE-86D47443D7BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoZe_Main", "DoPaNoZe_Main\NoZe_Main.csproj", "{4820C1AF-3D35-4A9B-A1BE-86D47443D7BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

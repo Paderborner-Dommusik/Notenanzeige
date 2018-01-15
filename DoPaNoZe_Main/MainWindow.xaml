@@ -1,11 +1,11 @@
-﻿<Window x:Class="DoPaNoZe_Main.MainWindow"
+﻿<Window x:Class="NoZe_Main.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DoPaNoZe_Main"
+        xmlns:local="clr-namespace:NoZe_Main"
         mc:Ignorable="d"
-        Title="DoPaNoZe" Height="1000" Width="1920" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
+        Title="NoZe" Height="1000" Width="1920" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
     <Grid>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,441,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,391,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
@@ -19,7 +19,7 @@
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,621,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
         <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="275" Margin="41,623,0,0" VerticalAlignment="Top" Width="144" Source="ressources/bassschlüssel.png" Opacity="0.7"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,821,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Image x:Name="image1" Height="185" Margin="348,10,299.6,0" VerticalAlignment="Top" Source="ressources/dopanoze_wide.png"/>
+        <Image x:Name="image1" Height="185" Margin="348,10,299.6,0" VerticalAlignment="Top" Source="ressources/NoZe_wide.png"/>
         <Label x:Name="note_e" Content="" HorizontalAlignment="Left" Margin="399,447,0,0" VerticalAlignment="Top" FontSize="48"/>
         <Label x:Name="note_f" Content="" HorizontalAlignment="Left" Margin="442,422,0,0" VerticalAlignment="Top" FontSize="48"/>
         <Label x:Name="note_g" Content="" HorizontalAlignment="Left" Margin="485,397,0,0" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.393,0.539"/>

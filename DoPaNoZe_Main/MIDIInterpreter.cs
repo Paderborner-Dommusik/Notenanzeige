@@ -4,7 +4,7 @@ using r3ne.Multimedia.Midi;
 using System.Threading;
 using System.Windows;
 
-namespace DoPaNoZe_Main
+namespace NoZe_Main
 {
     class MIDIInterpreter
     {

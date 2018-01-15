@@ -1,4 +1,4 @@
-namespace DoPaNoZe_View
+namespace NoZe_View
 {
     partial class Form1
     {
@@ -150,7 +150,7 @@ namespace DoPaNoZe_View
             this.Controls.Add(this.channelMessageGroupBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "DoPaNoZe";
+            this.Text = "NoZe";
             this.channelMessageGroupBox.ResumeLayout(false);
             this.sysExGroupBox.ResumeLayout(false);
             this.systemCommonGroupBox.ResumeLayout(false);
