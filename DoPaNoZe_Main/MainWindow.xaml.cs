@@ -8,11 +8,13 @@ namespace NoZe_Main
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static Window mainwindowInstance = null;
         private Controller systemController;
 
         public MainWindow()
         {
             InitializeComponent();
+            mainwindowInstance = this;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

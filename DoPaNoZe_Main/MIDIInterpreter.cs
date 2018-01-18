@@ -106,6 +106,7 @@ namespace NoZe_Main
         {
             context.Post(delegate (object dummy)
             {
+                MainWindow.mainwindowInstance.Visibility = null;
                 //e.Message.MessageType = what happend? o.O
                 //e.Message.Data1 = ID
                 //e.Message.Data2 = press harder!

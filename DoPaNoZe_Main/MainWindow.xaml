@@ -56,9 +56,5 @@
         <Image x:Name="Element_2_png_Copy5" Margin="1611,360,225,626" Source="Element 2.png" Stretch="Fill"/>
         <Image x:Name="Element_2_png_Copy2" Margin="555,659,1281,327" Source="Element 2.png" Stretch="Fill"/>
 
-
-
-
-
     </Grid>
 </Window>
