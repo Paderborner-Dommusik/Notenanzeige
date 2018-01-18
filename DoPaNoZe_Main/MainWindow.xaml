@@ -7,27 +7,55 @@
         mc:Ignorable="d"
         Title="NoZe" Height="1000" Width="1920" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,441,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,391,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,341,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,291,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="335" Margin="10,236,0,0" VerticalAlignment="Top" Width="175" Source="ressources/violinenschlüssel.png" Opacity="0.7"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,491,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,771,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,721,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,671,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,621,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="275" Margin="41,623,0,0" VerticalAlignment="Top" Width="144" Source="ressources/bassschlüssel.png" Opacity="0.7"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,821,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Image x:Name="image1" Height="185" Margin="348,10,299.6,0" VerticalAlignment="Top" Source="ressources/NoZe_wide.png"/>
-        <Label x:Name="note_e" Content="" HorizontalAlignment="Left" Margin="399,447,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Label x:Name="note_f" Content="" HorizontalAlignment="Left" Margin="442,422,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Label x:Name="note_g" Content="" HorizontalAlignment="Left" Margin="485,397,0,0" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.393,0.539"/>
-        <Label x:Name="note_d" Content="" HorizontalAlignment="Left" Margin="356,474,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Label x:Name="note_c" Content="" HorizontalAlignment="Left" Margin="311,497,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Label x:Name="note_a" Content="" HorizontalAlignment="Left" Margin="528,371,0,0" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.393,0.539"/>
-        <Label x:Name="note_h" Content="" HorizontalAlignment="Left" Margin="571,347,0,0" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.393,0.539"/>
-        <Label x:Name="note_c2" Content="" HorizontalAlignment="Left" Margin="614,326,0,0" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.393,0.539"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-145,567,-113,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-145,517,-113,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-145,467,-113,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-135,417,-123,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="335" Margin="10,362,0,0" VerticalAlignment="Top" Width="175" Source="ressources/violinenschlüssel.png" Opacity="0.7"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-145,617,-113,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
+
+        <Image x:Name="glow_55" Margin="260,673,1530,197" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_57" Margin="376,646,1414,224" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_59" Margin="484,629,1306,241" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_60" Margin="532,601,1258,269" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_62" Margin="627,581,1163,289" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_64" Margin="736,557,1054,313" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_65" Margin="787,533,1003,337" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_67" Margin="884,507,906,363" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_69" Margin="991,482,799,388" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_71" Margin="1093,455,697,415" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_72" Margin="1146,432,644,438" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_74" Margin="1245,407,545,463" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_76" Margin="1341,382,449,488" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_77" Margin="1392,356,398,514" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_79" Margin="1489,331,301,539" Source="glow.png" Stretch="Fill"/>
+        <Image x:Name="glow_81" Margin="1588,303,202,567" Source="glow.png" Stretch="Fill"/>
+
+        <Image x:Name="image1" Height="185" Margin="348,18,300,0" VerticalAlignment="Top" Source="ressources/NoZe_wide.png"/>
+        <Image x:Name="note_single_png_Copy5" Margin="786,532,1003,337" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy" Margin="735,556,1054,313" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy1" Margin="626,581,1163,288" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy2" Margin="532,600,1257,269" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy3" Margin="482,628,1307,241" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy4" Margin="376,645,1413,224" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy6" Margin="260,672,1529,197" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy7" Margin="884,506,905,363" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy8" Margin="990,481,799,388" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy9" Margin="1092,455,697,414" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy10" Margin="1145,431,644,438" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy11" Margin="1244,406,545,463" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy12" Margin="1341,381,448,488" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy13" Margin="1392,355,397,514" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy14" Margin="1488,330,301,539" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="note_single_png_Copy15" Margin="1587,302,202,567" Source="note_single.png" Stretch="Fill"/>
+        <Image x:Name="Element_2_png_Copy" Margin="400,703,1436,283" Source="Element 2.png" Stretch="Fill"/>
+        <Image x:Name="Element_2_png_Copy1" Margin="284,704,1552,282" Source="Element 2.png" Stretch="Fill"/>
+        <Image x:Name="Element_2_png_Copy3" Margin="400,659,1436,327" Source="Element 2.png" Stretch="Fill"/>
+        <Image x:Name="Element_2_png_Copy4" Margin="284,659,1552,327" Source="Element 2.png" Stretch="Fill"/>
+        <Image x:Name="Element_2_png_Copy5" Margin="1611,360,225,626" Source="Element 2.png" Stretch="Fill"/>
+        <Image x:Name="Element_2_png_Copy2" Margin="555,659,1281,327" Source="Element 2.png" Stretch="Fill"/>
+
 
 
 

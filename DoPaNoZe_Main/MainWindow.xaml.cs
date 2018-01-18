@@ -18,6 +18,7 @@ namespace NoZe_Main
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             systemController = new Controller();
+            systemController.Run();
         }
 
         public void SetNoteOn(int midiID)

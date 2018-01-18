@@ -11,12 +11,10 @@ namespace NoZe_Main
         private static MIDIInterpreter MIDIInterpreterInstance;
         public static MIDIInterpreter GetInstance()
         {
-
             if (MIDIInterpreterInstance == null)
             {
                 MIDIInterpreterInstance = new MIDIInterpreter();
             }
-
             return MIDIInterpreterInstance;
         }
 
@@ -111,6 +109,7 @@ namespace NoZe_Main
                 //e.Message.MessageType = what happend? o.O
                 //e.Message.Data1 = ID
                 //e.Message.Data2 = press harder!
+                
             }, null);
         }
 
