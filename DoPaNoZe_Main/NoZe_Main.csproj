@@ -144,13 +144,25 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="note_single.png" />
+    <Resource Include="ressources\note_single.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Element 2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="glow.png" />
+    <Resource Include="ressources\glow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ressources\note_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ressources\bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ressources\simple_noteview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ressources\release.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

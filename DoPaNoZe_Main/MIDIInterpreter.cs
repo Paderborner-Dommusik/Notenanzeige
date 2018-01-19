@@ -43,6 +43,8 @@ namespace NoZe_Main
                     inDevice.SysExMessageReceived += HandleSysExMessageReceived;
                     inDevice.SysRealtimeMessageReceived += HandleSysRealtimeMessageReceived;
                     inDevice.Error += new EventHandler<ErrorEventArgs>(inDevice_Error);
+
+                    startRecording(); //Lets just pretend everything is fine \o/
                 }
                 catch (Exception ex)
                 {
@@ -50,7 +52,7 @@ namespace NoZe_Main
                         MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            startRecording(); //Lets just pretend everything is fine \o/
+            
             
         }
 
@@ -106,7 +108,7 @@ namespace NoZe_Main
         {
             context.Post(delegate (object dummy)
             {
-                MainWindow.mainwindowInstance.Visibility = null;
+                NoZe_Main.MainWindow.mainwindowInstance.SwitchNote(Convert.ToInt32(e.Message.Data1));
                 //e.Message.MessageType = what happend? o.O
                 //e.Message.Data1 = ID
                 //e.Message.Data2 = press harder!
