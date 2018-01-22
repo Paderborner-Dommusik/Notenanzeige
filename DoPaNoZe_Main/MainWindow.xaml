@@ -7,32 +7,29 @@
         mc:Ignorable="d"
         Title="NoZe" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
     <Grid>
-
-
-        <Image x:Name="glow_55" Margin="444,670,1366,280" Source="ressources/glow.png" />
-        <Image x:Name="glow_57" Margin="539,649,1271,300" Source="ressources/glow.png" />
-        <Image x:Name="glow_59" Margin="588,623,1221,325" Source="ressources/glow.png" />
-        <Image x:Name="glow_60" Margin="681,605,1129,344" Source="ressources/glow.png" />
-        <Image x:Name="glow_62" Margin="763,583,1047,366" Source="ressources/glow.png" />
-        <Image x:Name="glow_64" Margin="808,557,1002,392" Source="ressources/glow.png" />
-        <Image x:Name="glow_65" Margin="885,536,925,413" Source="ressources/glow.png" />
-        <Image x:Name="glow_67" Margin="966,513,844,436" Source="ressources/glow.png" />
-        <Image x:Name="glow_69" Margin="1048,489,761,460" Source="ressources/glow.png"/>
-        <Image x:Name="glow_71" Margin="1090,463,720,485" Source="ressources/glow.png"/>
-        <Image x:Name="glow_72" Margin="1177,440,633,508" Source="ressources/glow.png"/>
-        <Image x:Name="glow_74" Margin="1245,416,564,533" Source="ressources/glow.png"/>
-        <Image x:Name="glow_76" Margin="1288,394,522,556" Source="ressources/glow.png"/>
-        <Image x:Name="glow_77" Margin="1370,370,440,579" Source="ressources/glow.png"/>
-        <Image x:Name="glow_79" Margin="1455,349,355,600" Source="ressources/glow.png"/>
-        <Image x:Name="glow_81" Margin="1562,325,248,625" Source="ressources/glow.png"/>
-        <Image x:Name="glow_82" Margin="1608,303,202,647" Source="ressources/glow.png"/>
-
+        <Image x:Name="note_1" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/1.png" Height="1845"/>
+        <Image x:Name="note_2" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/2.png" Height="1845"/>
+        <Image x:Name="note_3" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/3.png" Height="1845"/>
+        <Image x:Name="note_4" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/4.png" Height="1845"/>
+        <Image x:Name="note_5" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/5.png" Height="1845"/>
+        <Image x:Name="note_6" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/9.png" Height="1845"/>
+        <Image x:Name="note_7" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/10.png" Height="1845"/>
+        <Image x:Name="note_8" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/11.png" Height="1845"/>
+        <Image x:Name="note_9" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/12.png" Height="1845"/>
+        <Image x:Name="note_10" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/13.png" Height="1845"/>
+        <Image x:Name="note_11" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/14.png" Height="1845"/>
+        <Image x:Name="note_12" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/15.png" Height="1845"/>
+        <Image x:Name="note_13" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/16.png" Height="1845"/>
+        <Image x:Name="note_14" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/17.png" Height="1845"/>
+        <Image x:Name="note_15" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/18.png" Height="1845"/>
+        <Image x:Name="note_16" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/19.png" Height="1845"/>
+        <Image x:Name="note_17" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/20.png" Height="1845"/>
+        <Image x:Name="back" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/simple_noteview.png" Height="1845"/>
 
         <Image x:Name="werbung" Height="185" Margin="348,18,300,0" VerticalAlignment="Top" Source="ressources/NoZe_wide.png"/>
-        <Image x:Name="back" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/simple_noteview.png" Height="1845"/>
-        <Image x:Name="release" Height="43" Margin="704,160,914,0" VerticalAlignment="Top" Source="ressources/release.png"/>
-
-
+        <Label x:Name="userCom" Content="" HorizontalAlignment="Left" FontSize="24" FontFamily="Oswald Medium" Margin="10,0,0,10" Height="39" VerticalAlignment="Bottom"/>
+        <Label x:Name="version" Content="" HorizontalAlignment="Left" FontSize="24" FontFamily="Oswald Medium" Margin="1773,0,0,10" Height="39" VerticalAlignment="Bottom"/>
+        <Label Loaded="_Loaded"/>
 
     </Grid>
 </Window>

@@ -30,6 +30,7 @@ namespace NoZe_Main
             {
                 MessageBox.Show("Kein Gerät erkannt.", "Fehler!",
                     MessageBoxButton.OK, MessageBoxImage.Error);
+                MainWindow.mainwindowInstance.OutUser("Kein Gerät erkannt.");
             }
             else
             {

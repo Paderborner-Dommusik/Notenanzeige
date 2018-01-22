@@ -164,6 +164,25 @@
   <ItemGroup>
     <Resource Include="ressources\release.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ressources\Noten\1.png" />
+    <Resource Include="ressources\Noten\10.png" />
+    <Resource Include="ressources\Noten\11.png" />
+    <Resource Include="ressources\Noten\12.png" />
+    <Resource Include="ressources\Noten\13.png" />
+    <Resource Include="ressources\Noten\14.png" />
+    <Resource Include="ressources\Noten\15.png" />
+    <Resource Include="ressources\Noten\16.png" />
+    <Resource Include="ressources\Noten\17.png" />
+    <Resource Include="ressources\Noten\18.png" />
+    <Resource Include="ressources\Noten\19.png" />
+    <Resource Include="ressources\Noten\2.png" />
+    <Resource Include="ressources\Noten\20.png" />
+    <Resource Include="ressources\Noten\3.png" />
+    <Resource Include="ressources\Noten\4.png" />
+    <Resource Include="ressources\Noten\5.png" />
+    <Resource Include="ressources\Noten\9.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
