@@ -24,6 +24,22 @@
         <Image x:Name="note_15" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/18.png" Height="1845"/>
         <Image x:Name="note_16" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/19.png" Height="1845"/>
         <Image x:Name="note_17" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/20.png" Height="1845"/>
+
+        <Image x:Name="hnote_1" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h1.png" Height="1845"/>
+        <Image x:Name="hnote_2" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h2.png" Height="1845"/>
+        <Image x:Name="hnote_3" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h3.png" Height="1845"/>
+        <Image x:Name="hnote_4" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h4.png" Height="1845"/>
+        <Image x:Name="hnote_5" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h5.png" Height="1845"/>
+        <Image x:Name="hnote_6" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h6.png" Height="1845"/>
+        <Image x:Name="hnote_7" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h7.png" Height="1845"/>
+        <Image x:Name="hnote_8" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h8.png" Height="1845"/>
+        <Image x:Name="hnote_9" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h9.png" Height="1845"/>
+        <Image x:Name="hnote_10" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h10.png" Height="1845"/>
+        <Image x:Name="hnote_11" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h11.png" Height="1845"/>
+        <Image x:Name="hnote_12" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h12.png" Height="1845"/>
+
+
+
         <Image x:Name="back" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/simple_noteview.png" Height="1845"/>
 
         <Image x:Name="werbung" Height="185" Margin="348,18,300,0" VerticalAlignment="Top" Source="ressources/NoZe_wide.png"/>
