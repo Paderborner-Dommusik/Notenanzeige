@@ -10,20 +10,29 @@ namespace NoZe_Main
     public partial class MainWindow : Window
     {
         public static MainWindow mainwindowInstance = null;
+        
+        //Instance of the system Controller
         private Controller systemController;
   
+        //Holds all needed Midi Ids and the corresponding Image. To be changed in final version.
         private Dictionary<int, Image> midiToView = new Dictionary<int, Image>();
 
         
-        
+        /// <summary>
+        /// Loads MainWindow, saves Instance to static mainWindowInstance
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
             mainwindowInstance = this;
 
-            version.Content = "b_0-18012211";
         }
 
+        /// <summary>
+        /// Init new Controller
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //Init midiToView
@@ -31,6 +40,11 @@ namespace NoZe_Main
             systemController.Run();
         }
 
+
+        /// <summary>
+        /// Sets Note on
+        /// </summary>
+        /// <param name="midiID">The ID of the Midi Event</param>
         public void SetNoteOn(int midiID)
         {
             Image glowElement = null;
@@ -42,6 +56,10 @@ namespace NoZe_Main
             }
         }
 
+        /// <summary>
+        /// Sets Note off
+        /// </summary>
+        /// <param name="midiID">The ID of the Midi Event</param>
         public void SetNoteOff(int midiID)
         {
             Image glowElement = null;
@@ -53,6 +71,12 @@ namespace NoZe_Main
             }
         }
 
+
+        /// <summary>
+        /// Finds out if Note is on.
+        /// </summary>
+        /// <param name="midiID">The ID of the Midi Event</param>
+        /// <returns>State of given Note</returns>
         public bool IsNoteOn(int midiID)
         {
             Image glowElement = null;
@@ -65,6 +89,11 @@ namespace NoZe_Main
             return false;
         }
 
+
+        /// <summary>
+        /// Toggles the State of a Note
+        /// </summary>
+        /// <param name="midiID">The ID of the Midi Event</param>
         public void SwitchNote(int midiID)
         {
             if (IsNoteOn(midiID))
@@ -73,11 +102,21 @@ namespace NoZe_Main
                 SetNoteOn(midiID);
         }
 
+        /// <summary>
+        /// Sets User Output Label Text
+        /// </summary>
+        /// <param name="com">Text to print out</param>
         public void OutUser(string com)
         {
             userCom.Content = com;
         }
 
+
+        /// <summary>
+        /// Called on finished load. Couldnt do this in Window loaded because otherwise the notes wouldnt be displayed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _Loaded(object sender, RoutedEventArgs e)
         {
             midiToView.Add(57, note_1);
@@ -110,12 +149,19 @@ namespace NoZe_Main
             midiToView.Add(84, note_17);
             midiToView.Add(85, hnote_12);
 
+
+            //Turn all notes Off.
             foreach (int a in midiToView.Keys)
             {
                 SetNoteOff(a);
             }
 
            
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            systemController.Stop();
         }
     }
 }

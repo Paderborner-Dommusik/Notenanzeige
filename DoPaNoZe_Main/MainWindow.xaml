@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoZe_Main"
         mc:Ignorable="d"
-        Title="NoZe" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
+        Title="NoZe" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
         <Image x:Name="note_1" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/1.png" Height="1845"/>
         <Image x:Name="note_2" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/2.png" Height="1845"/>
@@ -41,11 +41,9 @@
 
 
         <Image x:Name="back" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/simple_noteview.png" Height="1845"/>
-
-        <Image x:Name="werbung" Height="185" Margin="348,18,300,0" VerticalAlignment="Top" Source="ressources/NoZe_wide.png"/>
         <Label x:Name="userCom" Content="" HorizontalAlignment="Left" FontSize="24" FontFamily="Oswald Medium" Margin="10,0,0,10" Height="39" VerticalAlignment="Bottom"/>
-        <Label x:Name="version" Content="" HorizontalAlignment="Left" FontSize="24" FontFamily="Oswald Medium" Margin="1773,0,0,10" Height="39" VerticalAlignment="Bottom"/>
         <Label Loaded="_Loaded"/>
+
 
     </Grid>
 </Window>
