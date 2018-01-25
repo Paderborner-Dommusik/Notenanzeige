@@ -141,7 +141,7 @@ namespace NoZe_Main
         {
             context.Post(delegate (object dummy)
             {
-                NoZe_Main.MainWindow.mainwindowInstance.SwitchNote(Convert.ToInt32(e.Message.Data1));
+                NoZe_Main.MainWindow.mainwindowInstance.SwitchNote(Convert.ToInt32(e.Message.Data1), -1);
                 //e.Message.MessageType = what happend? o.O
                 //e.Message.Data1 = ID
                 //e.Message.Data2 = press harder!
