@@ -5,31 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoZe_Main"
         mc:Ignorable="d"
-        Title="NoZe" Height="1000" Width="1920" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
+        Title="NoZe" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,441,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,391,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,341,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,291,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="335" Margin="10,236,0,0" VerticalAlignment="Top" Width="175" Source="ressources/violinenschlüssel.png" Opacity="0.7"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,491,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,771,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,721,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,671,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,621,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="275" Margin="41,623,0,0" VerticalAlignment="Top" Width="144" Source="ressources/bassschlüssel.png" Opacity="0.7"/>
-        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-155,821,-101,0" Stroke="Black" VerticalAlignment="Top" Width="2170"/>
-        <Image x:Name="image1" Height="185" Margin="348,10,299.6,0" VerticalAlignment="Top" Source="ressources/NoZe_wide.png"/>
-        <Label x:Name="note_e" Content="" HorizontalAlignment="Left" Margin="399,447,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Label x:Name="note_f" Content="" HorizontalAlignment="Left" Margin="442,422,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Label x:Name="note_g" Content="" HorizontalAlignment="Left" Margin="485,397,0,0" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.393,0.539"/>
-        <Label x:Name="note_d" Content="" HorizontalAlignment="Left" Margin="356,474,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Label x:Name="note_c" Content="" HorizontalAlignment="Left" Margin="311,497,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Label x:Name="note_a" Content="" HorizontalAlignment="Left" Margin="528,371,0,0" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.393,0.539"/>
-        <Label x:Name="note_h" Content="" HorizontalAlignment="Left" Margin="571,347,0,0" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.393,0.539"/>
-        <Label x:Name="note_c2" Content="" HorizontalAlignment="Left" Margin="614,326,0,0" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.393,0.539"/>
+        <Image x:Name="note_1" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/1.png" Height="1845"/>
+        <Image x:Name="note_2" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/2.png" Height="1845"/>
+        <Image x:Name="note_3" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/3.png" Height="1845"/>
+        <Image x:Name="note_4" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/4.png" Height="1845"/>
+        <Image x:Name="note_5" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/5.png" Height="1845"/>
+        <Image x:Name="note_6" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/9.png" Height="1845"/>
+        <Image x:Name="note_7" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/10.png" Height="1845"/>
+        <Image x:Name="note_8" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/11.png" Height="1845"/>
+        <Image x:Name="note_9" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/12.png" Height="1845"/>
+        <Image x:Name="note_10" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/13.png" Height="1845"/>
+        <Image x:Name="note_11" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/14.png" Height="1845"/>
+        <Image x:Name="note_12" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/15.png" Height="1845"/>
+        <Image x:Name="note_13" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/16.png" Height="1845"/>
+        <Image x:Name="note_14" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/17.png" Height="1845"/>
+        <Image x:Name="note_15" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/18.png" Height="1845"/>
+        <Image x:Name="note_16" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/19.png" Height="1845"/>
+        <Image x:Name="note_17" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/Noten/20.png" Height="1845"/>
+
+        <Image x:Name="hnote_1" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h1.png" Height="1845"/>
+        <Image x:Name="hnote_2" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h2.png" Height="1845"/>
+        <Image x:Name="hnote_3" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h3.png" Height="1845"/>
+        <Image x:Name="hnote_4" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h4.png" Height="1845"/>
+        <Image x:Name="hnote_5" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h5.png" Height="1845"/>
+        <Image x:Name="hnote_6" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h6.png" Height="1845"/>
+        <Image x:Name="hnote_7" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h7.png" Height="1845"/>
+        <Image x:Name="hnote_8" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h8.png" Height="1845"/>
+        <Image x:Name="hnote_9" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h9.png" Height="1845"/>
+        <Image x:Name="hnote_10" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h10.png" Height="1845"/>
+        <Image x:Name="hnote_11" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h11.png" Height="1845"/>
+        <Image x:Name="hnote_12" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/hNoten/h12.png" Height="1845"/>
 
 
+
+        <Image x:Name="back" Margin="0,0,-163,-773" VerticalAlignment="Top" Source="ressources/simple_noteview.png" Height="1845"/>
+        <Label x:Name="userCom" Content="" HorizontalAlignment="Left" FontSize="24" FontFamily="Oswald Medium" Margin="10,0,0,10" Height="39" VerticalAlignment="Bottom"/>
+        <Label Loaded="_Loaded"/>
 
 
     </Grid>

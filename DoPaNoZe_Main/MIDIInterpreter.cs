@@ -8,30 +8,45 @@ namespace NoZe_Main
 {
     class MIDIInterpreter
     {
+
+        //holds Singleton Midi Interpreter Instance
         private static MIDIInterpreter MIDIInterpreterInstance;
+
+        /// <summary>
+        /// Get /and create if needed/ Mdi Interpreter instance
+        /// </summary>
+        /// <returns>Singleton Midi Interpreter Instance</returns>
         public static MIDIInterpreter GetInstance()
         {
-
             if (MIDIInterpreterInstance == null)
             {
                 MIDIInterpreterInstance = new MIDIInterpreter();
             }
-
             return MIDIInterpreterInstance;
         }
 
         private const int SysExBufferSize = 128;
 
+        /// <summary>
+        /// Holds input Device, if found
+        /// </summary>
         private InputDevice inDevice = null;
+
 
         private SynchronizationContext context;
 
+        /// <summary>
+        /// Tries to connect to a Midi Device.
+        /// If not found, Message Box with Error,
+        /// If Found init Event Management
+        /// </summary>
         private MIDIInterpreter()
         {
             if (InputDevice.DeviceCount == 0)
             {
                 MessageBox.Show("Kein Gerät erkannt.", "Fehler!",
                     MessageBoxButton.OK, MessageBoxImage.Error);
+                MainWindow.mainwindowInstance.OutUser("Kein Gerät erkannt.");
             }
             else
             {
@@ -45,6 +60,8 @@ namespace NoZe_Main
                     inDevice.SysExMessageReceived += HandleSysExMessageReceived;
                     inDevice.SysRealtimeMessageReceived += HandleSysRealtimeMessageReceived;
                     inDevice.Error += new EventHandler<ErrorEventArgs>(inDevice_Error);
+
+                    startRecording(); //Lets just pretend everything is fine \o/
                 }
                 catch (Exception ex)
                 {
@@ -52,10 +69,14 @@ namespace NoZe_Main
                         MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            startRecording(); //Lets just pretend everything is fine \o/
+            
             
         }
 
+        /// <summary>
+        /// Disable Event Management and close connection to device
+        /// Nulls Interpreter instance
+        /// </summary>
         public void Destroy()
         {
             if (inDevice != null)
@@ -66,6 +87,9 @@ namespace NoZe_Main
             MIDIInterpreterInstance = null;
         }
 
+        /// <summary>
+        /// Starts the Recording
+        /// </summary>
         private void startRecording()
         {
             try
@@ -79,6 +103,9 @@ namespace NoZe_Main
             }
         }
 
+        /// <summary>
+        /// Stops the Recording
+        /// </summary>
         private void stopRecording()
         {
             try
@@ -93,11 +120,17 @@ namespace NoZe_Main
             }
         }
 
+        /// <summary>
+        /// Event For Errors in device
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void inDevice_Error(object sender, ErrorEventArgs e)
         {
             MessageBox.Show(e.Error.Message, "Error!",
                    MessageBoxButton.OK, MessageBoxImage.Stop);
         }
+
 
         /// <summary>
         /// Key Press and Release Events
@@ -108,26 +141,40 @@ namespace NoZe_Main
         {
             context.Post(delegate (object dummy)
             {
+                NoZe_Main.MainWindow.mainwindowInstance.SwitchNote(Convert.ToInt32(e.Message.Data1));
                 //e.Message.MessageType = what happend? o.O
                 //e.Message.Data1 = ID
                 //e.Message.Data2 = press harder!
+                
             }, null);
         }
 
+
+        /// <summary>
+        /// Sys Messages, not needed yet
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void HandleSysExMessageReceived(object sender, SysExMessageEventArgs e)
         {
-            //dont think we need this
         }
 
+        /// <summary>
+        /// Sys Common Messages, not needed but fetched - just in case
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void HandleSysCommonMessageReceived(object sender, SysCommonMessageEventArgs e)
         {
-            //wont need this either
         }
 
+        /// <summary>
+        /// Realtime Messages - for some reason nothings working without fetching these
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void HandleSysRealtimeMessageReceived(object sender, SysRealtimeMessageEventArgs e)
         {
-            //pew pew
-
         }
     }
 }
