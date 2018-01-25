@@ -133,46 +133,41 @@ namespace NoZe_Main
         /// <param name="e"></param>
         private void _Loaded(object sender, RoutedEventArgs e)
         {
-            midiToView[0] = new Dictionary<int, Image>();
-            midiToView[0].Add(-1, back);
-            midiToView[0].Add(57, note_1);
-            midiToView[0].Add(58, hnote_1);
-            midiToView[0].Add(59, note_2);
-            midiToView[0].Add(60, note_3);
-            midiToView[0].Add(61, hnote_2);
-            midiToView[0].Add(62, note_4);
-            midiToView[0].Add(63, hnote_3);
-            midiToView[0].Add(64, note_5);
-            midiToView[0].Add(65, note_6);
-            midiToView[0].Add(66, hnote_4);
-            midiToView[0].Add(67, note_7);
-            midiToView[0].Add(68, hnote_5);
-            midiToView[0].Add(69, note_8);
-            midiToView[0].Add(70, hnote_6);
-            midiToView[0].Add(71, note_9);
-            midiToView[0].Add(72, note_10);
-            midiToView[0].Add(73, hnote_7);
-            midiToView[0].Add(74, note_11);
-            midiToView[0].Add(75, hnote_8);
-            midiToView[0].Add(76, note_12);
-            midiToView[0].Add(77, note_13);
-            midiToView[0].Add(78, hnote_9);
-            midiToView[0].Add(79, note_14);
-            midiToView[0].Add(80, hnote_10);
-            midiToView[0].Add(81, note_15);
-            midiToView[0].Add(82, hnote_11);
-            midiToView[0].Add(83, note_16);
-            midiToView[0].Add(84, note_17);
-            midiToView[0].Add(85, hnote_12);
+            CreateBaseView();
+            CreateHalfnoteView();
 
+            RefreshViewMode();
+        }
 
-            //Turn all notes Off.
-            foreach (int a in midiToView[0].Keys)
+        private void RefreshViewMode()
+        {
+            for(int i = 0; i<= midiToView.Length-1; i++)
             {
-                SetNoteOff(a, 0);
+                Dictionary<int, Image> a = midiToView[i];
+                foreach (int b in a.Keys)
+                    SetNoteOff(b, i);
             }
 
+            //Show note Grid for selected Mode
+            SetNoteOn(-1, selectedViewMode);
+        }
 
+        public void CycleViewMode()
+        {
+            if(selectedViewMode < midiToView.Length-1)
+            {
+                selectedViewMode++;
+            }
+            else
+            {
+                selectedViewMode = 0;
+            }
+
+            RefreshViewMode();
+        }
+
+        private void CreateHalfnoteView()
+        {
             //half tone view
             midiToView[1] = new Dictionary<int, Image>();
             midiToView[1].Add(-1, hv_back);
@@ -213,14 +208,58 @@ namespace NoZe_Main
                 SetNoteOff(a, 1);
             }
 
+        }
 
-            SetNoteOn(-1, selectedViewMode);
+        private void CreateBaseView()
+        {
+            midiToView[0] = new Dictionary<int, Image>();
+            midiToView[0].Add(-1, back);
+            midiToView[0].Add(57, note_1);
+            midiToView[0].Add(58, hnote_1);
+            midiToView[0].Add(59, note_2);
+            midiToView[0].Add(60, note_3);
+            midiToView[0].Add(61, hnote_2);
+            midiToView[0].Add(62, note_4);
+            midiToView[0].Add(63, hnote_3);
+            midiToView[0].Add(64, note_5);
+            midiToView[0].Add(65, note_6);
+            midiToView[0].Add(66, hnote_4);
+            midiToView[0].Add(67, note_7);
+            midiToView[0].Add(68, hnote_5);
+            midiToView[0].Add(69, note_8);
+            midiToView[0].Add(70, hnote_6);
+            midiToView[0].Add(71, note_9);
+            midiToView[0].Add(72, note_10);
+            midiToView[0].Add(73, hnote_7);
+            midiToView[0].Add(74, note_11);
+            midiToView[0].Add(75, hnote_8);
+            midiToView[0].Add(76, note_12);
+            midiToView[0].Add(77, note_13);
+            midiToView[0].Add(78, hnote_9);
+            midiToView[0].Add(79, note_14);
+            midiToView[0].Add(80, hnote_10);
+            midiToView[0].Add(81, note_15);
+            midiToView[0].Add(82, hnote_11);
+            midiToView[0].Add(83, note_16);
+            midiToView[0].Add(84, note_17);
+            midiToView[0].Add(85, hnote_12);
 
+
+            //Turn all notes Off.
+            foreach (int a in midiToView[0].Keys)
+            {
+                SetNoteOff(a, 0);
+            }
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             systemController.Stop();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CycleViewMode();
         }
     }
 }

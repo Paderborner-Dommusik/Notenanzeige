@@ -142,10 +142,20 @@ namespace NoZe_Main
             context.Post(delegate (object dummy)
             {
                 NoZe_Main.MainWindow.mainwindowInstance.SwitchNote(Convert.ToInt32(e.Message.Data1), -1);
+                
+                if(e.Message.Command.ToString() == "NoteOn")
+                {
+                    NoZe_Main.MainWindow.mainwindowInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1), -1);
+                }
+                else
+                {
+                    NoZe_Main.MainWindow.mainwindowInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1), -1);
+                }
+                //e.Message.Command = DOITNAAAAUH
                 //e.Message.MessageType = what happend? o.O
                 //e.Message.Data1 = ID
                 //e.Message.Data2 = press harder!
-                
+
             }, null);
         }
 
