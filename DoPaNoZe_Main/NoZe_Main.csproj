@@ -112,18 +112,10 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="ressources\simple_noteview.psd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\violinenschlüssel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\bassschlüssel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\NoZe_wide.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Source\r3ne.Multimedia.Midi.csproj">
@@ -144,58 +136,67 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ressources\note_single.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Element 2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\glow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\note_bar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\bar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\simple_noteview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\release.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\Noten\1.png" />
-    <Resource Include="ressources\Noten\10.png" />
-    <Resource Include="ressources\Noten\11.png" />
-    <Resource Include="ressources\Noten\12.png" />
-    <Resource Include="ressources\Noten\13.png" />
-    <Resource Include="ressources\Noten\14.png" />
-    <Resource Include="ressources\Noten\15.png" />
-    <Resource Include="ressources\Noten\16.png" />
-    <Resource Include="ressources\Noten\17.png" />
-    <Resource Include="ressources\Noten\18.png" />
-    <Resource Include="ressources\Noten\19.png" />
-    <Resource Include="ressources\Noten\2.png" />
-    <Resource Include="ressources\Noten\20.png" />
-    <Resource Include="ressources\Noten\3.png" />
-    <Resource Include="ressources\Noten\4.png" />
-    <Resource Include="ressources\Noten\5.png" />
-    <Resource Include="ressources\Noten\9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\hNoten\h1.png" />
-    <Resource Include="ressources\hNoten\h10.png" />
-    <Resource Include="ressources\hNoten\h11.png" />
-    <Resource Include="ressources\hNoten\h12.png" />
-    <Resource Include="ressources\hNoten\h2.png" />
-    <Resource Include="ressources\hNoten\h3.png" />
-    <Resource Include="ressources\hNoten\h4.png" />
-    <Resource Include="ressources\hNoten\h5.png" />
-    <Resource Include="ressources\hNoten\h6.png" />
-    <Resource Include="ressources\hNoten\h7.png" />
-    <Resource Include="ressources\hNoten\h8.png" />
-    <Resource Include="ressources\hNoten\h9.png" />
+    <Resource Include="ressources\banner.png" />
+    <Resource Include="ressources\baseView\back.png" />
+    <Resource Include="ressources\baseView\hnote_1.png" />
+    <Resource Include="ressources\baseView\hnote_10.png" />
+    <Resource Include="ressources\baseView\hnote_11.png" />
+    <Resource Include="ressources\baseView\hnote_12.png" />
+    <Resource Include="ressources\baseView\hnote_2.png" />
+    <Resource Include="ressources\baseView\hnote_3.png" />
+    <Resource Include="ressources\baseView\hnote_4.png" />
+    <Resource Include="ressources\baseView\hnote_5.png" />
+    <Resource Include="ressources\baseView\hnote_6.png" />
+    <Resource Include="ressources\baseView\hnote_7.png" />
+    <Resource Include="ressources\baseView\hnote_8.png" />
+    <Resource Include="ressources\baseView\hnote_9.png" />
+    <Resource Include="ressources\baseView\note_1.png" />
+    <Resource Include="ressources\baseView\note_10.png" />
+    <Resource Include="ressources\baseView\note_11.png" />
+    <Resource Include="ressources\baseView\note_12.png" />
+    <Resource Include="ressources\baseView\note_13.png" />
+    <Resource Include="ressources\baseView\note_14.png" />
+    <Resource Include="ressources\baseView\note_15.png" />
+    <Resource Include="ressources\baseView\note_16.png" />
+    <Resource Include="ressources\baseView\note_17.png" />
+    <Resource Include="ressources\baseView\note_2.png" />
+    <Resource Include="ressources\baseView\note_3.png" />
+    <Resource Include="ressources\baseView\note_4.png" />
+    <Resource Include="ressources\baseView\note_5.png" />
+    <Resource Include="ressources\baseView\note_6.png" />
+    <Resource Include="ressources\baseView\note_7.png" />
+    <Resource Include="ressources\baseView\note_8.png" />
+    <Resource Include="ressources\baseView\note_9.png" />
+    <Resource Include="ressources\halbtonView\back.png" />
+    <Resource Include="ressources\halbtonView\hnote_1.png" />
+    <Resource Include="ressources\halbtonView\hnote_10.png" />
+    <Resource Include="ressources\halbtonView\hnote_11.png" />
+    <Resource Include="ressources\halbtonView\hnote_12.png" />
+    <Resource Include="ressources\halbtonView\hnote_2.png" />
+    <Resource Include="ressources\halbtonView\hnote_3.png" />
+    <Resource Include="ressources\halbtonView\hnote_4.png" />
+    <Resource Include="ressources\halbtonView\hnote_5.png" />
+    <Resource Include="ressources\halbtonView\hnote_6.png" />
+    <Resource Include="ressources\halbtonView\hnote_7.png" />
+    <Resource Include="ressources\halbtonView\hnote_8.png" />
+    <Resource Include="ressources\halbtonView\hnote_9.png" />
+    <Resource Include="ressources\halbtonView\note_1.png" />
+    <Resource Include="ressources\halbtonView\note_10.png" />
+    <Resource Include="ressources\halbtonView\note_11.png" />
+    <Resource Include="ressources\halbtonView\note_12.png" />
+    <Resource Include="ressources\halbtonView\note_13.png" />
+    <Resource Include="ressources\halbtonView\note_14.png" />
+    <Resource Include="ressources\halbtonView\note_15.png" />
+    <Resource Include="ressources\halbtonView\note_16.png" />
+    <Resource Include="ressources\halbtonView\note_17.png" />
+    <Resource Include="ressources\halbtonView\note_2.png" />
+    <Resource Include="ressources\halbtonView\note_3.png" />
+    <Resource Include="ressources\halbtonView\note_4.png" />
+    <Resource Include="ressources\halbtonView\note_5.png" />
+    <Resource Include="ressources\halbtonView\note_6.png" />
+    <Resource Include="ressources\halbtonView\note_7.png" />
+    <Resource Include="ressources\halbtonView\note_8.png" />
+    <Resource Include="ressources\halbtonView\note_9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
