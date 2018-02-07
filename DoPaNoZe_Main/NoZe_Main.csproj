@@ -74,6 +74,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="views\simple_halbtonView.xaml.cs">
+      <DependentUpon>simple_halbtonView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\simple_mainview.xaml.cs">
+      <DependentUpon>simple_mainview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\viewbase.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -87,6 +94,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="views\simple_halbtonView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\simple_mainview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MIDIInterpreter.cs" />

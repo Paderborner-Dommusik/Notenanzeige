@@ -46,7 +46,6 @@ namespace NoZe_Main
             {
                 MessageBox.Show("Kein Gerät erkannt.", "Fehler!",
                     MessageBoxButton.OK, MessageBoxImage.Error);
-                MainWindow.mainwindowInstance.OutUser("Kein Gerät erkannt.");
             }
             else
             {
@@ -61,7 +60,7 @@ namespace NoZe_Main
                     inDevice.SysRealtimeMessageReceived += HandleSysRealtimeMessageReceived;
                     inDevice.Error += new EventHandler<ErrorEventArgs>(inDevice_Error);
 
-                    startRecording(); //Lets just pretend everything is fine \o/
+                    StartRecording(); //Lets just pretend everything is fine \o/
                 }
                 catch (Exception ex)
                 {
@@ -81,7 +80,7 @@ namespace NoZe_Main
         {
             if (inDevice != null)
             {
-                stopRecording();
+                StopRecording();
                 inDevice.Close();
             }
             MIDIInterpreterInstance = null;
@@ -90,7 +89,7 @@ namespace NoZe_Main
         /// <summary>
         /// Starts the Recording
         /// </summary>
-        private void startRecording()
+        private void StartRecording()
         {
             try
             {
@@ -106,7 +105,7 @@ namespace NoZe_Main
         /// <summary>
         /// Stops the Recording
         /// </summary>
-        private void stopRecording()
+        private void StopRecording()
         {
             try
             {
@@ -141,15 +140,15 @@ namespace NoZe_Main
         {
             context.Post(delegate (object dummy)
             {
-                NoZe_Main.MainWindow.mainwindowInstance.SwitchNote(Convert.ToInt32(e.Message.Data1), -1);
-                
+                NoZe_Main.MainWindow.ActiveInstance.SwitchNote(Convert.ToInt32(e.Message.Data1));
+
                 if(e.Message.Command.ToString() == "NoteOn")
                 {
-                    NoZe_Main.MainWindow.mainwindowInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1), -1);
+                    NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
                 }
                 else
                 {
-                    NoZe_Main.MainWindow.mainwindowInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1), -1);
+                    NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
                 }
                 //e.Message.Command = DOITNAAAAUH
                 //e.Message.MessageType = what happend? o.O
@@ -179,7 +178,7 @@ namespace NoZe_Main
         }
 
         /// <summary>
-        /// Realtime Messages - for some reason nothings working without fetching these
+        /// Realtime Messages - for some reason nothing works without fetching these
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
