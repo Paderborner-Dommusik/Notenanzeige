@@ -41,8 +41,8 @@ namespace NoZe_Main
         private void _Loaded(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            activeInstance = new simple_mainview();
-            activeInstance.Show();
+            activeInstance = new simple_halbtonView();
+            activeInstance.ShowDialog();
             this.Show();
         }
         

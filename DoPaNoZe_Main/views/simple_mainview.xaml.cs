@@ -33,6 +33,7 @@ namespace NoZe_Main.views
         {
             CreateView();
             LoadedView();
+            RefreshView();
         }
 
         private void CreateView()
@@ -75,7 +76,6 @@ namespace NoZe_Main.views
             {
                 SetNoteOff(a);
             }
-
 
         }
                 

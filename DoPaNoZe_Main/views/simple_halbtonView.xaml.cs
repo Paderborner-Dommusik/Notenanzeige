@@ -33,6 +33,7 @@ namespace NoZe_Main.views
         {
             CreateView();
             LoadedView();
+            RefreshView();
         }
 
         private void CreateView()

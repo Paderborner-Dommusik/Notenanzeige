@@ -22,7 +22,7 @@ namespace NoZe_Main.views
             systemController.Run();
         }
 
-        private void RefreshView()
+        public void RefreshView()
         {
             foreach (int b in midiToView.Keys)
                 SetNoteOff(b);
