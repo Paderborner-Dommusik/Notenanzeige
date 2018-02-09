@@ -53,6 +53,9 @@
   <PropertyGroup>
     <StartupObject>NoZe_Main.App</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>black.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -212,6 +215,12 @@
     <Resource Include="ressources\simple\halbtonView\note_7.png" />
     <Resource Include="ressources\simple\halbtonView\note_8.png" />
     <Resource Include="ressources\simple\halbtonView\note_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ressources\black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="black.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -10,7 +10,7 @@ namespace NoZe_Main.views
 {
     public class Viewbase : Window
     {
-        public static Dictionary<int, Image> midiToView = new Dictionary<int, Image>();
+        public Dictionary<int, Image> midiToView = new Dictionary<int, Image>();
 
         //Instance of the system Controller
         private Controller systemController;

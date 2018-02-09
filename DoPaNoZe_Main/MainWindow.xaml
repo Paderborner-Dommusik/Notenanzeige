@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoZe_Main"
         mc:Ignorable="d"
-        Title="Notenzeiger Auswahl" Height="500" Width="900" Loaded="Window_Loaded" Closing="Window_Closing" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Notenanzeige" Height="500" Width="900" Loaded="Window_Loaded" Closing="Window_Closing" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Topmost="True" Icon="ressources/black.png">
     <Grid>
-        <Label Loaded="_Loaded" Grid.ColumnSpan="2" Margin="0,0,-0.4,-0.4"/>
+
+
+        <Label Loaded="_Loaded" Grid.ColumnSpan="2" Margin="0,0,-0.4,-0.4"></Label>
+
+        <Rectangle Fill="#FFF4F4F5" Height="230" Stroke="Black" Width="212" Margin="341,157,340.6,83.4"/>
+        <Label Content="Normale Ansichten" Margin="352,166,361.6,269.4"/>
+
+
+        <Rectangle Fill="#FFF4F4F5" Height="230" Stroke="Black" Width="212" Margin="99,157,582.6,83.4"/>
+        <Label Content="Einfache Ansichten" Margin="113,166,600.6,269.4"/>
+        <Button x:Name="simple_standard" Content="Standard" Margin="113,206,665.6,223.4" Click="simple_standard_Click"/>
+        <Button x:Name="simple_halftone" Content="Halbton" Margin="113,252,665.6,177.4" Click="simple_halftone_Click"/>
+        <Rectangle Fill="#FFF4F4F5" Height="230" Stroke="Black" Width="212" Margin="575,157,106.6,83.4"/>
+        <Label Content="Spezial Ansichten" Margin="586,166,127.6,269.4"/>
+        <Image HorizontalAlignment="Left" Height="237" Margin="10,10,-0.4,0" VerticalAlignment="Top" Width="884" Source="ressources/banner.png"/>
+
     </Grid>
 </Window>

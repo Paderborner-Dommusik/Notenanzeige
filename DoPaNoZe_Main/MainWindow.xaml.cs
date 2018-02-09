@@ -40,10 +40,7 @@ namespace NoZe_Main
         /// <param name="e"></param>
         private void _Loaded(object sender, RoutedEventArgs e)
         {
-            this.Hide();
-            activeInstance = new simple_halbtonView();
-            activeInstance.ShowDialog();
-            this.Show();
+            
         }
         
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -51,6 +48,22 @@ namespace NoZe_Main
 
         }
 
+        private void simple_standard_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            activeInstance = null;
+            activeInstance = new simple_mainview();
+            activeInstance.ShowDialog();
+            this.Show();
+        }
 
+        private void simple_halftone_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            activeInstance = null;
+            activeInstance = new simple_halbtonView();
+            activeInstance.ShowDialog();
+            this.Show();
+        }
     }
 }
