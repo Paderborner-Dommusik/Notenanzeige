@@ -65,5 +65,47 @@ namespace NoZe_Main
             activeInstance.ShowDialog();
             this.Show();
         }
+
+        //3b, Es-Dur / C-Moll
+        private void normal_m3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //2b, B-Dur / G-Moll
+        private void normal_m2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //1b, F-Dur / D-Moll
+        private void normal_m1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //0, C-Dur / A-Moll
+        private void normal_n_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //1#, G-Dur / E-Moll
+        private void normal_p1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //2#, D-Dur / H-Moll
+        private void normal_p2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //3#, A-Dur / Fis-Moll
+        private void normal_p3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

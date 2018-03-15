@@ -222,6 +222,15 @@
   <ItemGroup>
     <Resource Include="black.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ressources\normal\m1\" />
+    <Folder Include="ressources\normal\m2\" />
+    <Folder Include="ressources\normal\m3\" />
+    <Folder Include="ressources\normal\n\" />
+    <Folder Include="ressources\normal\p1\" />
+    <Folder Include="ressources\normal\p2\" />
+    <Folder Include="ressources\normal\p3\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
