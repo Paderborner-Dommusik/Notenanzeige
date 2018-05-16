@@ -50,62 +50,70 @@ namespace NoZe_Main
 
         private void simple_standard_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
-            activeInstance = null;
-            activeInstance = new simple_mainview();
-            activeInstance.ShowDialog();
-            this.Show();
+            initInstance(new simple_mainview());
         }
 
         private void simple_halftone_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
-            activeInstance = null;
-            activeInstance = new simple_halbtonView();
-            activeInstance.ShowDialog();
-            this.Show();
+            initInstance(new simple_halbtonView());
         }
 
         //3b, Es-Dur / C-Moll
         private void normal_m3_Click(object sender, RoutedEventArgs e)
         {
-
+            initInstance(new normal_esc());
         }
 
         //2b, B-Dur / G-Moll
         private void normal_m2_Click(object sender, RoutedEventArgs e)
         {
-
+            initInstance(new normal_bg());
         }
 
         //1b, F-Dur / D-Moll
         private void normal_m1_Click(object sender, RoutedEventArgs e)
         {
-
+            initInstance(new normal_fd());
         }
 
         //0, C-Dur / A-Moll
         private void normal_n_Click(object sender, RoutedEventArgs e)
         {
-
+            initInstance(new normal_ca());
         }
 
         //1#, G-Dur / E-Moll
         private void normal_p1_Click(object sender, RoutedEventArgs e)
         {
-
+            initInstance(new normal_ge());
         }
 
         //2#, D-Dur / H-Moll
         private void normal_p2_Click(object sender, RoutedEventArgs e)
         {
-
+            initInstance(new normal_dh());
         }
 
         //3#, A-Dur / Fis-Moll
         private void normal_p3_Click(object sender, RoutedEventArgs e)
         {
+            initInstance(new normal_afis());
+        }
+
+        private void so_what_Click(object sender, RoutedEventArgs e)
+        {
 
         }
+
+        private void initInstance(Viewbase type)
+        {
+            this.Hide();
+            activeInstance = null;
+            activeInstance = type;
+            activeInstance.ShowDialog();
+            this.Show();
+        }
+
+        
     }
 }

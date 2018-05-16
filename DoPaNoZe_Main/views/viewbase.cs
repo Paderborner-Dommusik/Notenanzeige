@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -11,7 +7,7 @@ namespace NoZe_Main.views
     public class Viewbase : Window
     {
         public Dictionary<int, Image> midiToView = new Dictionary<int, Image>();
-
+        
         //Instance of the system Controller
         private Controller systemController;
 

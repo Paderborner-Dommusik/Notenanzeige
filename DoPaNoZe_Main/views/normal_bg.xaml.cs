@@ -1,18 +1,28 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace NoZe_Main.views
 {
     /// <summary>
-    /// Interaktionslogik für simple_mainview.xaml
+    /// Interaktionslogik für normal_bg.xaml
     /// </summary>
-    public partial class simple_mainview : Viewbase
+    public partial class normal_bg : Viewbase
     {
-
-        public simple_mainview()
+        public normal_bg()
         {
             InitializeComponent();
         }
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
         }
@@ -64,9 +74,6 @@ namespace NoZe_Main.views
             {
                 SetNoteOff(a);
             }
-
         }
-                
     }
 }
-

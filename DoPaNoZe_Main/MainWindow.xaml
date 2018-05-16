@@ -33,7 +33,7 @@
 
         <Label Content="Spezial Ansichten" Margin="586,166,127.6,269.4"/>
 
-        <Button x:Name="so_what" Content="¯\_(ツ)_/¯" Margin="628,271,150.6,158.4"/>
+        <Button x:Name="so_what" Content="¯\_(ツ)_/¯" Margin="628,271,150.6,158.4" Click="so_what_Click"/>
 
 
 
