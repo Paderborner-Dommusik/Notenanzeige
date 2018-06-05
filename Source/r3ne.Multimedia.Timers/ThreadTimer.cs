@@ -85,6 +85,8 @@ namespace r3ne.Multimedia.Timers
         // Represents the method that raises the Tick event.
         private EventRaiser tickRaiser;
 
+        private EventRaiser disabledTickRaiser;
+
         // The ISynchronizeInvoke object to use for marshaling events.
         private ISynchronizeInvoke synchronizingObject = null;
 

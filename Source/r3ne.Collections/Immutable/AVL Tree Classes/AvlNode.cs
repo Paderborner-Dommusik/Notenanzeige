@@ -3,7 +3,7 @@
  * 
  * Last modified: 02/23/2005
  * 
- * Contact: jabberdabber@hotmail.com
+ * Contact: dev@r3ne.de
  */
 
 using System;
