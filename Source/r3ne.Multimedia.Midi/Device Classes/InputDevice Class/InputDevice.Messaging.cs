@@ -26,8 +26,8 @@
 #region Contact
 
 /*
- *  r3ne
- * Email: jabberdabber@hotmail.com
+ *  r3ne.de media - Rene Henkenius
+ * Email: dev@r3ne.de
  */
 
 #endregion

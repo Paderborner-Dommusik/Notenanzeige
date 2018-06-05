@@ -1,6 +1,6 @@
 #region License
 
-/* Copyright (c) 2017  r3ne
+/* Copyright (c) 2018  r3ne.de media
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy 
  * of this software and associated documentation files (the "Software"), to 
@@ -26,8 +26,8 @@
 #region Contact
 
 /*
- *  r3ne
- * Email: jabberdabber@hotmail.com
+ *  r3ne.de media - Rene Henkenius
+ * Email: dev@r3ne.de
  */
 
 #endregion
