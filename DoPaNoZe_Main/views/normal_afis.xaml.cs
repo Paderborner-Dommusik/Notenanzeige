@@ -21,6 +21,7 @@ namespace NoZe_Main.views
     {
         public normal_afis()
         {
+
             InitializeComponent();
         }
 

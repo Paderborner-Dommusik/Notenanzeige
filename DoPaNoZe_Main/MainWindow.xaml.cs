@@ -100,9 +100,19 @@ namespace NoZe_Main
             initInstance(new normal_afis());
         }
 
-        private void so_what_Click(object sender, RoutedEventArgs e)
+        private void lizensierung_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Programm lizensiert für \n-- Paderborner Dommusik \n-- dommusik@r3ne.de \n-- 180101validfor200101 \n-- verifyid004", "Gültige Lizenz gefunden", MessageBoxButton.OK);
+        }
 
+        private void midiDebug_Click(object sender, RoutedEventArgs e)
+        {
+            initInstance(new midiDebug(false));
+        }
+
+        private void midiDebug_MouseRightButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            initInstance(new midiDebug(true));
         }
 
         private void initInstance(Viewbase type)

@@ -31,9 +31,10 @@
         <Button x:Name="simple_halftone" Content="Halbton" Margin="147,296,631.6,133.4" Click="simple_halftone_Click"/>
         <Rectangle Fill="#FFF4F4F5" Width="212" Margin="575,157,106.6,73.4"/>
 
-        <Label Content="Spezial Ansichten" Margin="586,166,127.6,269.4"/>
+        <Label Content="Sonstige" Margin="586,166,127.6,269.4"/>
 
-        <Button x:Name="so_what" Content="¯\_(ツ)_/¯" Margin="628,271,150.6,158.4" Click="so_what_Click"/>
+        <Button x:Name="lizensierung" Content="Lizenzsierung" Margin="627,226,151.6,203.4" Click="lizensierung_Click"/>
+        <Button x:Name="midiDebug" Content="MIDI Fehlersuche" Margin="627,304,151.6,125.4" Click="midiDebug_Click" MouseRightButtonUp="midiDebug_MouseRightButtonUp"/>
 
 
 
