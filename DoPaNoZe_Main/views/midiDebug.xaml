@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoZe_Main.views"
         mc:Ignorable="d"
-        Title="midiDebug" Height="685.513" Width="806.786">
+        Title="midiDebug" Height="685.513" Width="1158.946">
     <Grid>
+        <ListBox x:Name="channelListBox" HorizontalAlignment="Left" Margin="10,30,0,10" Width="265"/>
+        <ListBox x:Name="sysExRichTextBox" HorizontalAlignment="Left" Margin="295,30,0,10" Width="265"/>
+        <ListBox x:Name="sysCommonListBox" Margin="0,30,306,10" HorizontalAlignment="Right" Width="265"/>
+        <ListBox x:Name="sysRealtimeListBox" Margin="0,30,21,10" HorizontalAlignment="Right" Width="265"/>
 
     </Grid>
 </local:Viewbase>

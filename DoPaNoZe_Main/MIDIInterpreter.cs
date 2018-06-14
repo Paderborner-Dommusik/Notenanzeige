@@ -33,7 +33,7 @@ namespace NoZe_Main
         private InputDevice inDevice = null;
 
 
-        private SynchronizationContext context;
+        public SynchronizationContext context;
 
         /// <summary>
         /// Tries to connect to a Midi Device.
@@ -52,13 +52,25 @@ namespace NoZe_Main
                 try
                 {
                     context = SynchronizationContext.Current;
-
                     inDevice = new InputDevice(0);
-                    inDevice.ChannelMessageReceived += HandleChannelMessageReceived;
-                    inDevice.SysCommonMessageReceived += HandleSysCommonMessageReceived;
-                    inDevice.SysExMessageReceived += HandleSysExMessageReceived;
-                    inDevice.SysRealtimeMessageReceived += HandleSysRealtimeMessageReceived;
-                    inDevice.Error += new EventHandler<ErrorEventArgs>(inDevice_Error);
+
+                    if(views.midiDebug.isActive == true)
+                    {
+                        inDevice.ChannelMessageReceived += views.midiDebug.activeInstance.HandleChannelMessageReceived;
+                        inDevice.SysCommonMessageReceived += views.midiDebug.activeInstance.HandleSysCommonMessageReceived;
+                        inDevice.SysExMessageReceived += views.midiDebug.activeInstance.HandleSysExMessageReceived;
+                        inDevice.SysRealtimeMessageReceived += views.midiDebug.activeInstance.HandleSysRealtimeMessageReceived;
+                        inDevice.Error += new EventHandler<ErrorEventArgs>(inDevice_Error);
+                    }
+                    else
+                    {
+                        inDevice.ChannelMessageReceived += HandleChannelMessageReceived;
+                        inDevice.SysCommonMessageReceived += HandleSysCommonMessageReceived;
+                        inDevice.SysExMessageReceived += HandleSysExMessageReceived;
+                        inDevice.SysRealtimeMessageReceived += HandleSysRealtimeMessageReceived;
+                        inDevice.Error += new EventHandler<ErrorEventArgs>(inDevice_Error);
+                    }
+                    
 
                     StartRecording(); //Lets just pretend everything is fine \o/
                 }

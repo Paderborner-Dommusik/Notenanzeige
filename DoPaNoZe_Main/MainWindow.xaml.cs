@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 
+
 namespace NoZe_Main
 {
     
@@ -48,80 +49,108 @@ namespace NoZe_Main
 
         }
 
-        private void simple_standard_Click(object sender, RoutedEventArgs e)
+        private void Simple_standard_Click(object sender, RoutedEventArgs e)
         {
-            initInstance(new simple_mainview());
+            InitInstance(new simple_mainview());
         }
 
-        private void simple_halftone_Click(object sender, RoutedEventArgs e)
+        private void Simple_halftone_Click(object sender, RoutedEventArgs e)
         {
-            initInstance(new simple_halbtonView());
+            InitInstance(new simple_halbtonView());
         }
 
         //3b, Es-Dur / C-Moll
-        private void normal_m3_Click(object sender, RoutedEventArgs e)
+        private void Normal_m3_Click(object sender, RoutedEventArgs e)
         {
-            initInstance(new normal_esc());
+            InitInstance(new normal_esc());
         }
 
         //2b, B-Dur / G-Moll
-        private void normal_m2_Click(object sender, RoutedEventArgs e)
+        private void Normal_m2_Click(object sender, RoutedEventArgs e)
         {
-            initInstance(new normal_bg());
+            InitInstance(new normal_bg());
         }
 
         //1b, F-Dur / D-Moll
-        private void normal_m1_Click(object sender, RoutedEventArgs e)
+        private void Normal_m1_Click(object sender, RoutedEventArgs e)
         {
-            initInstance(new normal_fd());
+            InitInstance(new normal_fd());
         }
 
         //0, C-Dur / A-Moll
-        private void normal_n_Click(object sender, RoutedEventArgs e)
+        private void Normal_n_Click(object sender, RoutedEventArgs e)
         {
-            initInstance(new normal_ca());
+            InitInstance(new normal_ca());
         }
 
         //1#, G-Dur / E-Moll
-        private void normal_p1_Click(object sender, RoutedEventArgs e)
+        private void Normal_p1_Click(object sender, RoutedEventArgs e)
         {
-            initInstance(new normal_ge());
+            InitInstance(new normal_ge());
         }
 
         //2#, D-Dur / H-Moll
-        private void normal_p2_Click(object sender, RoutedEventArgs e)
+        private void Normal_p2_Click(object sender, RoutedEventArgs e)
         {
-            initInstance(new normal_dh());
+            InitInstance(new normal_dh());
         }
 
         //3#, A-Dur / Fis-Moll
-        private void normal_p3_Click(object sender, RoutedEventArgs e)
+        private void Normal_p3_Click(object sender, RoutedEventArgs e)
         {
-            initInstance(new normal_afis());
+            InitInstance(new normal_afis());
         }
 
-        private void lizensierung_Click(object sender, RoutedEventArgs e)
+        private void Lizensierung_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Programm lizensiert für \n-- Paderborner Dommusik \n-- dommusik@r3ne.de \n-- 180101validfor200101 \n-- verifyid004", "Gültige Lizenz gefunden", MessageBoxButton.OK);
+            MessageBox.Show("Programm lizensiert für \n\nPaderborner Dommusik \n dommusik@r3ne.de \n 180101validfor200101 \n verifyid004", "Gültige Lizenz gefunden", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
-        private void midiDebug_Click(object sender, RoutedEventArgs e)
+        private void MidiDebug_Click(object sender, RoutedEventArgs e)
         {
-            initInstance(new midiDebug(false));
+            MessageBoxResult mbr = System.Windows.MessageBox.Show("Achtung! Hierdurch wird eine Diagnose Sitzung gestartet, fortfahren?", "Diagnosesitzung", MessageBoxButton.YesNo, MessageBoxImage.Exclamation);
+
+            if(mbr == MessageBoxResult.Yes)
+            {
+                views.midiDebug.isActive = true;
+                InitInstance(views.midiDebug.activeInstance = new midiDebug(false));
+            }
+            
+            
         }
 
-        private void midiDebug_MouseRightButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private void MidiDebug_MouseRightButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            initInstance(new midiDebug(true));
+
+            MessageBoxResult mbr = System.Windows.MessageBox.Show("Achtung! Hierdurch wird eine Diagnose Sitzung gestartet, fortfahren?", "Diagnosesitzung", MessageBoxButton.YesNo, MessageBoxImage.Exclamation);
+
+            if (mbr == MessageBoxResult.Yes)
+            {
+                views.midiDebug.isActive = true;
+                InitInstance(views.midiDebug.activeInstance = new midiDebug(true));
+            }
+
+
         }
 
-        private void initInstance(Viewbase type)
+        private void InitInstance(Viewbase type)
         {
             this.Hide();
             activeInstance = null;
             activeInstance = type;
             activeInstance.ShowDialog();
-            this.Show();
+
+            //disable debug session
+            if (views.midiDebug.isActive == true)
+            {
+                MessageBox.Show("Diagnose Sitzung wird beendet.", "Diagnosesitzung", MessageBoxButton.OK, MessageBoxImage.Error);
+                this.Close();
+            }
+            else
+            {
+                this.Show();
+            }
+                        
         }
 
         
