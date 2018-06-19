@@ -193,6 +193,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="ressources\simple\.DS_Store" />
     <None Include="ressources\simple_noteview.psd" />
   </ItemGroup>
   <ItemGroup>
@@ -218,106 +219,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ressources\banner.png" />
-    <Resource Include="ressources\simple\baseView\back.png" />
-    <Resource Include="ressources\simple\baseView\hnote_1.png" />
-    <Resource Include="ressources\simple\baseView\hnote_10.png" />
-    <Resource Include="ressources\simple\baseView\hnote_11.png" />
-    <Resource Include="ressources\simple\baseView\hnote_12.png" />
-    <Resource Include="ressources\simple\baseView\hnote_2.png" />
-    <Resource Include="ressources\simple\baseView\hnote_3.png" />
-    <Resource Include="ressources\simple\baseView\hnote_4.png" />
-    <Resource Include="ressources\simple\baseView\hnote_5.png" />
-    <Resource Include="ressources\simple\baseView\hnote_6.png" />
-    <Resource Include="ressources\simple\baseView\hnote_7.png" />
-    <Resource Include="ressources\simple\baseView\hnote_8.png" />
-    <Resource Include="ressources\simple\baseView\hnote_9.png" />
-    <Resource Include="ressources\simple\baseView\note_1.png" />
-    <Resource Include="ressources\simple\baseView\note_10.png" />
-    <Resource Include="ressources\simple\baseView\note_11.png" />
-    <Resource Include="ressources\simple\baseView\note_12.png" />
-    <Resource Include="ressources\simple\baseView\note_13.png" />
-    <Resource Include="ressources\simple\baseView\note_14.png" />
-    <Resource Include="ressources\simple\baseView\note_15.png" />
-    <Resource Include="ressources\simple\baseView\note_16.png" />
-    <Resource Include="ressources\simple\baseView\note_17.png" />
-    <Resource Include="ressources\simple\baseView\note_2.png" />
-    <Resource Include="ressources\simple\baseView\note_3.png" />
-    <Resource Include="ressources\simple\baseView\note_4.png" />
-    <Resource Include="ressources\simple\baseView\note_5.png" />
-    <Resource Include="ressources\simple\baseView\note_6.png" />
-    <Resource Include="ressources\simple\baseView\note_7.png" />
-    <Resource Include="ressources\simple\baseView\note_8.png" />
-    <Resource Include="ressources\simple\baseView\note_9.png" />
-    <Resource Include="ressources\simple\halbtonView\back.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_1.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_10.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_11.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_12.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_2.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_3.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_4.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_5.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_6.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_7.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_8.png" />
-    <Resource Include="ressources\simple\halbtonView\hnote_9.png" />
-    <Resource Include="ressources\simple\halbtonView\note_1.png" />
-    <Resource Include="ressources\simple\halbtonView\note_10.png" />
-    <Resource Include="ressources\simple\halbtonView\note_11.png" />
-    <Resource Include="ressources\simple\halbtonView\note_12.png" />
-    <Resource Include="ressources\simple\halbtonView\note_13.png" />
-    <Resource Include="ressources\simple\halbtonView\note_14.png" />
-    <Resource Include="ressources\simple\halbtonView\note_15.png" />
-    <Resource Include="ressources\simple\halbtonView\note_16.png" />
-    <Resource Include="ressources\simple\halbtonView\note_17.png" />
-    <Resource Include="ressources\simple\halbtonView\note_2.png" />
-    <Resource Include="ressources\simple\halbtonView\note_3.png" />
-    <Resource Include="ressources\simple\halbtonView\note_4.png" />
-    <Resource Include="ressources\simple\halbtonView\note_5.png" />
-    <Resource Include="ressources\simple\halbtonView\note_6.png" />
-    <Resource Include="ressources\simple\halbtonView\note_7.png" />
-    <Resource Include="ressources\simple\halbtonView\note_8.png" />
-    <Resource Include="ressources\simple\halbtonView\note_9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\black.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="black.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ressources\normal\cab\back.png" />
-    <Resource Include="ressources\normal\cab\hnote_1.png" />
-    <Resource Include="ressources\normal\cab\hnote_10.png" />
-    <Resource Include="ressources\normal\cab\hnote_11.png" />
-    <Resource Include="ressources\normal\cab\hnote_12.png" />
-    <Resource Include="ressources\normal\cab\hnote_2.png" />
-    <Resource Include="ressources\normal\cab\hnote_3.png" />
-    <Resource Include="ressources\normal\cab\hnote_4.png" />
-    <Resource Include="ressources\normal\cab\hnote_5.png" />
-    <Resource Include="ressources\normal\cab\hnote_6.png" />
-    <Resource Include="ressources\normal\cab\hnote_7.png" />
-    <Resource Include="ressources\normal\cab\hnote_8.png" />
-    <Resource Include="ressources\normal\cab\hnote_9.png" />
-    <Resource Include="ressources\normal\cab\note_1.png" />
-    <Resource Include="ressources\normal\cab\note_10.png" />
-    <Resource Include="ressources\normal\cab\note_11.png" />
-    <Resource Include="ressources\normal\cab\note_12.png" />
-    <Resource Include="ressources\normal\cab\note_13.png" />
-    <Resource Include="ressources\normal\cab\note_14.png" />
-    <Resource Include="ressources\normal\cab\note_15.png" />
-    <Resource Include="ressources\normal\cab\note_16.png" />
-    <Resource Include="ressources\normal\cab\note_17.png" />
-    <Resource Include="ressources\normal\cab\note_2.png" />
-    <Resource Include="ressources\normal\cab\note_3.png" />
-    <Resource Include="ressources\normal\cab\note_4.png" />
-    <Resource Include="ressources\normal\cab\note_5.png" />
-    <Resource Include="ressources\normal\cab\note_6.png" />
-    <Resource Include="ressources\normal\cab\note_7.png" />
-    <Resource Include="ressources\normal\cab\note_8.png" />
-    <Resource Include="ressources\normal\cab\note_9.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="ressources\normal\afis\back.png" />
     <Resource Include="ressources\normal\afis\hnote_1.png" />
     <Resource Include="ressources\normal\afis\hnote_10.png" />
@@ -378,6 +279,36 @@
     <Resource Include="ressources\normal\bg\note_7.png" />
     <Resource Include="ressources\normal\bg\note_8.png" />
     <Resource Include="ressources\normal\bg\note_9.png" />
+    <Resource Include="ressources\normal\cab\back.png" />
+    <Resource Include="ressources\normal\cab\hnote_1.png" />
+    <Resource Include="ressources\normal\cab\hnote_10.png" />
+    <Resource Include="ressources\normal\cab\hnote_11.png" />
+    <Resource Include="ressources\normal\cab\hnote_12.png" />
+    <Resource Include="ressources\normal\cab\hnote_2.png" />
+    <Resource Include="ressources\normal\cab\hnote_3.png" />
+    <Resource Include="ressources\normal\cab\hnote_4.png" />
+    <Resource Include="ressources\normal\cab\hnote_5.png" />
+    <Resource Include="ressources\normal\cab\hnote_6.png" />
+    <Resource Include="ressources\normal\cab\hnote_7.png" />
+    <Resource Include="ressources\normal\cab\hnote_8.png" />
+    <Resource Include="ressources\normal\cab\hnote_9.png" />
+    <Resource Include="ressources\normal\cab\note_1.png" />
+    <Resource Include="ressources\normal\cab\note_10.png" />
+    <Resource Include="ressources\normal\cab\note_11.png" />
+    <Resource Include="ressources\normal\cab\note_12.png" />
+    <Resource Include="ressources\normal\cab\note_13.png" />
+    <Resource Include="ressources\normal\cab\note_14.png" />
+    <Resource Include="ressources\normal\cab\note_15.png" />
+    <Resource Include="ressources\normal\cab\note_16.png" />
+    <Resource Include="ressources\normal\cab\note_17.png" />
+    <Resource Include="ressources\normal\cab\note_2.png" />
+    <Resource Include="ressources\normal\cab\note_3.png" />
+    <Resource Include="ressources\normal\cab\note_4.png" />
+    <Resource Include="ressources\normal\cab\note_5.png" />
+    <Resource Include="ressources\normal\cab\note_6.png" />
+    <Resource Include="ressources\normal\cab\note_7.png" />
+    <Resource Include="ressources\normal\cab\note_8.png" />
+    <Resource Include="ressources\normal\cab\note_9.png" />
     <Resource Include="ressources\normal\ca\back.png" />
     <Resource Include="ressources\normal\ca\hnote_1.png" />
     <Resource Include="ressources\normal\ca\hnote_10.png" />
@@ -528,6 +459,72 @@
     <Resource Include="ressources\normal\ge\note_7.png" />
     <Resource Include="ressources\normal\ge\note_8.png" />
     <Resource Include="ressources\normal\ge\note_9.png" />
+    <Resource Include="ressources\simple\baseView\back.png" />
+    <Resource Include="ressources\simple\baseView\hnote_1.png" />
+    <Resource Include="ressources\simple\baseView\hnote_10.png" />
+    <Resource Include="ressources\simple\baseView\hnote_11.png" />
+    <Resource Include="ressources\simple\baseView\hnote_12.png" />
+    <Resource Include="ressources\simple\baseView\hnote_2.png" />
+    <Resource Include="ressources\simple\baseView\hnote_3.png" />
+    <Resource Include="ressources\simple\baseView\hnote_4.png" />
+    <Resource Include="ressources\simple\baseView\hnote_5.png" />
+    <Resource Include="ressources\simple\baseView\hnote_6.png" />
+    <Resource Include="ressources\simple\baseView\hnote_7.png" />
+    <Resource Include="ressources\simple\baseView\hnote_8.png" />
+    <Resource Include="ressources\simple\baseView\hnote_9.png" />
+    <Resource Include="ressources\simple\baseView\note_1.png" />
+    <Resource Include="ressources\simple\baseView\note_10.png" />
+    <Resource Include="ressources\simple\baseView\note_11.png" />
+    <Resource Include="ressources\simple\baseView\note_12.png" />
+    <Resource Include="ressources\simple\baseView\note_13.png" />
+    <Resource Include="ressources\simple\baseView\note_14.png" />
+    <Resource Include="ressources\simple\baseView\note_15.png" />
+    <Resource Include="ressources\simple\baseView\note_16.png" />
+    <Resource Include="ressources\simple\baseView\note_17.png" />
+    <Resource Include="ressources\simple\baseView\note_2.png" />
+    <Resource Include="ressources\simple\baseView\note_3.png" />
+    <Resource Include="ressources\simple\baseView\note_4.png" />
+    <Resource Include="ressources\simple\baseView\note_5.png" />
+    <Resource Include="ressources\simple\baseView\note_6.png" />
+    <Resource Include="ressources\simple\baseView\note_7.png" />
+    <Resource Include="ressources\simple\baseView\note_8.png" />
+    <Resource Include="ressources\simple\baseView\note_9.png" />
+    <Resource Include="ressources\simple\halbtonView\back.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_1.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_10.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_11.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_12.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_2.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_3.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_4.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_5.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_6.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_7.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_8.png" />
+    <Resource Include="ressources\simple\halbtonView\hnote_9.png" />
+    <Resource Include="ressources\simple\halbtonView\note_1.png" />
+    <Resource Include="ressources\simple\halbtonView\note_10.png" />
+    <Resource Include="ressources\simple\halbtonView\note_11.png" />
+    <Resource Include="ressources\simple\halbtonView\note_12.png" />
+    <Resource Include="ressources\simple\halbtonView\note_13.png" />
+    <Resource Include="ressources\simple\halbtonView\note_14.png" />
+    <Resource Include="ressources\simple\halbtonView\note_15.png" />
+    <Resource Include="ressources\simple\halbtonView\note_16.png" />
+    <Resource Include="ressources\simple\halbtonView\note_17.png" />
+    <Resource Include="ressources\simple\halbtonView\note_2.png" />
+    <Resource Include="ressources\simple\halbtonView\note_3.png" />
+    <Resource Include="ressources\simple\halbtonView\note_4.png" />
+    <Resource Include="ressources\simple\halbtonView\note_5.png" />
+    <Resource Include="ressources\simple\halbtonView\note_6.png" />
+    <Resource Include="ressources\simple\halbtonView\note_7.png" />
+    <Resource Include="ressources\simple\halbtonView\note_8.png" />
+    <Resource Include="ressources\simple\halbtonView\note_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ressources\black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="black.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ressources\logo.png" />
