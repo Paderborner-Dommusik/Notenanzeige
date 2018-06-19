@@ -7,19 +7,19 @@ using System.Windows;
 // Allgemeine Informationen über eine Assembly werden über die folgenden 
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
-[assembly: AssemblyTitle("NoZe_Main")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Notenanzeige")]
+[assembly: AssemblyDescription("Notenanzeige der Dommusik Paderborn")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("NoZe_Main")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("Entwickelt für die Dommusik Paderborn von Rene Henkenius (r3ne.de media)")]
+[assembly: AssemblyProduct("Notenanzeige")]
+[assembly: AssemblyCopyright("Copyright r3ne.de media 2018")]
+[assembly: AssemblyTrademark("r3ne.de media")]
 [assembly: AssemblyCulture("")]
 
 // Durch Festlegen von ComVisible auf "false" werden die Typen in dieser Assembly unsichtbar 
 // für COM-Komponenten.  Wenn Sie auf einen Typ in dieser Assembly von 
 // COM aus zugreifen müssen, sollten Sie das ComVisible-Attribut für diesen Typ auf "True" festlegen.
-[assembly: ComVisible(false)]
+[assembly: ComVisible(true)]
 
 //Um mit dem Erstellen lokalisierbarer Anwendungen zu beginnen, legen Sie 
 //<UICulture>ImCodeVerwendeteKultur</UICulture> in der .csproj-Datei
@@ -51,5 +51,7 @@ using System.Windows;
 // Sie können alle Werte angeben oder die standardmäßigen Build- und Revisionsnummern 
 // übernehmen, indem Sie "*" eingeben:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("0.18.06.19")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguage("")]
+

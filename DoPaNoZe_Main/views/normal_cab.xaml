@@ -1,0 +1,45 @@
+﻿<local:Viewbase x:Class="NoZe_Main.views.normal_cab"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NoZe_Main.views"
+        mc:Ignorable="d"
+        Title="NoZe | C-Dur / a-Moll (b)" Height="1080" Width="1920" WindowState="Maximized" Loaded="Window_Loaded" Closing="Window_Closing" WindowStyle="ThreeDBorderWindow">
+    <Grid>
+        <Image x:Name="note_1" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_1.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_2" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_2.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_3" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_3.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_4" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_4.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_5" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_5.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_6" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_6.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_7" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_7.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_8" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_8.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_9" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_9.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_10" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_10.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_11" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_11.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_12" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_12.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_13" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_13.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_14" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_14.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_15" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_15.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_16" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_16.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_17" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/note_17.png" Height="1845" Grid.ColumnSpan="2"/>
+
+        <Image x:Name="hnote_1" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_1.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="hnote_2" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_2.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="hnote_3" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_3.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="hnote_4" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_4.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="hnote_5" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_5.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="hnote_6" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_6.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="hnote_7" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_7.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="hnote_8" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_8.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="hnote_9" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_9.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="hnote_10" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_10.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="hnote_11" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_11.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="hnote_12" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/hnote_12.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Label Loaded="_Loaded" Grid.ColumnSpan="2" Margin="0,0,-0.4,-0.4"/>
+
+        <Image x:Name="back" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/cab/back.png" Height="1845" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</local:Viewbase>

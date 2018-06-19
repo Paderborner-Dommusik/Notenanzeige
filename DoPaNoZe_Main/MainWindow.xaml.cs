@@ -1,4 +1,6 @@
-﻿using NoZe_Main.views;
+﻿using Microsoft.Win32;
+using NoZe_Main.views;
+using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
@@ -30,6 +32,59 @@ namespace NoZe_Main
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            
+
+            
+
+
+
+        }
+
+        private string getRegVal(string key)
+        {
+            try
+            {
+                RegistryKey SoftwareKey = Registry.LocalMachine.OpenSubKey("Software", true);
+
+                RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.noze");
+                return Convert.ToString(AppNameKey.GetValue(key, ""));
+            }
+            catch
+            {
+                MessageBox.Show("Programm muss zur Lizensierung als Administrator gestartet sein", "Fehler beim Lizensieren", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return null;
+            }
+            
+               
+        }
+
+        /// <summary>
+        /// Sets a value in preset registry spot
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        private bool setRegVal(string key, string value)
+        {
+            try
+            {
+                RegistryKey SoftwareKey = Registry.LocalMachine.OpenSubKey("Software", true);
+            RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.noze");
+
+            AppNameKey.SetValue(key, value);
+                return true;
+            }
+            catch {
+                return false;
+            }
+            
+        }
+
+        /// <summary>
+        /// tbi
+        /// </summary>
+        private void checkLicense()
         {
 
         }
@@ -77,8 +132,13 @@ namespace NoZe_Main
             InitInstance(new normal_fd());
         }
 
-        //0, C-Dur / A-Moll
-        private void Normal_n_Click(object sender, RoutedEventArgs e)
+        //0, C-Dur / A-Moll in Variante mit b und mit #
+        private void normal_b_Click(object sender, RoutedEventArgs e)
+        {
+            InitInstance(new normal_cab());
+        }
+
+        private void normal_sharp_Click(object sender, RoutedEventArgs e)
         {
             InitInstance(new normal_ca());
         }
@@ -103,7 +163,16 @@ namespace NoZe_Main
 
         private void Lizensierung_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Programm lizensiert für \n\nPaderborner Dommusik \n dommusik@r3ne.de \n 180101validfor200101 \n verifyid004", "Gültige Lizenz gefunden", MessageBoxButton.OK, MessageBoxImage.Information);
+            if (getRegVal("licensekey") == null)
+            {
+                if(setRegVal("licensekey", "DOM-000TEST"))
+                {
+                    MessageBox.Show("Die Lizenz -DOM-000TEST- wurde aktiviert", "Lizenz aktiviert", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                { MessageBox.Show("Lizenz konnte nicht aktiviert werden.", "Lizenzfehler", MessageBoxButton.OK, MessageBoxImage.Information);}
+            }
+
         }
 
         private void MidiDebug_Click(object sender, RoutedEventArgs e)

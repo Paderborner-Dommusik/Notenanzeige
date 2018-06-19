@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoZe_Main.views"
         mc:Ignorable="d"
-        Title="NoZe | C-Dur / a-Moll" Height="1080" Width="1920" WindowState="Maximized" Loaded="Window_Loaded" Closing="Window_Closing" WindowStyle="ThreeDBorderWindow">
+        Title="NoZe | C-Dur / a-Moll (#)" Height="1080" Width="1920" WindowState="Maximized" Loaded="Window_Loaded" Closing="Window_Closing" WindowStyle="ThreeDBorderWindow">
     <Grid>
         <Image x:Name="note_1" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/ca/note_1.png" Height="1845" Grid.ColumnSpan="2"/>
         <Image x:Name="note_2" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/normal/ca/note_2.png" Height="1845" Grid.ColumnSpan="2"/>
