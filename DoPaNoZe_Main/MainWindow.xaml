@@ -46,6 +46,8 @@
         <Label Content="3" Margin="421,350,416.6,86.4" HorizontalContentAlignment="Center"/>
         <Label Content="b" Margin="360,214,477.6,224.4" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
         <Label Content="#" Margin="482,214,355.6,222.4" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
+        <Label Content="Copyright 2018 - r3ne.de media" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,439,0,0"/>
+        <Label Content="licensed for de.pb.metropolitankapitel.dommusik.demo" HorizontalAlignment="Left" Margin="581,440,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
