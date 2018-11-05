@@ -36,8 +36,8 @@
 
         <Label Content="Sonstiges" Margin="655,191,152,236"/>
 
-        <Button x:Name="lizensierung" Content="Lizenzsierung" Margin="627,247,152,182" Click="Lizensierung_Click" IsEnabled="False" ToolTip="Lizenz aktivieren / Informationen abrufen" />
-        <Button x:Name="midiDebug" Content="MIDI Fehlersuche" Margin="627,296,152,133" Click="MidiDebug_Click" MouseRightButtonUp="MidiDebug_MouseRightButtonUp" IsEnabled="False" ToolTip="Treiber und Zuweisungsfehler finden" />
+        <Button x:Name="lizensierung" Content="Lizenzsierung" Margin="627,247,152,182" Click="Lizensierung_Click" ToolTip="Lizenz aktivieren / Informationen abrufen" Cursor="None" IsEnabled="False" />
+        <Button x:Name="midiDebug" Content="MIDI Fehlersuche" Margin="627,296,152,133" Click="MidiDebug_Click" MouseRightButtonUp="MidiDebug_MouseRightButtonUp" IsEnabled="False" ToolTip="Treiber und Zuweisungsfehler finden" Cursor="No" />
 
 
 
@@ -46,8 +46,8 @@
         <Label Content="3" Margin="421,350,416.6,86.4" HorizontalContentAlignment="Center"/>
         <Label Content="b" Margin="360,214,477.6,224.4" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
         <Label Content="#" Margin="482,214,355.6,222.4" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
-        <Label Content="Copyright 2018 - r3ne.de media" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,439,0,0"/>
-        <Label Content="licensed for de.pb.metropolitankapitel.dommusik.demo" HorizontalAlignment="Left" Margin="581,440,0,0" VerticalAlignment="Top"/>
+        <Label Content="Copyright 2018 - r3ne.de media - free for educational use" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,437,0,0" Width="322"/>
+        <Label Content="licensed for de.pb.metropolitankapitel.dommusik" HorizontalAlignment="Left" Margin="610,439,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

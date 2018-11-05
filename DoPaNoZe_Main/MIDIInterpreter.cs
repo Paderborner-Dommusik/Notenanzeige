@@ -44,7 +44,7 @@ namespace NoZe_Main
         {
             if (InputDevice.DeviceCount == 0)
             {
-                MessageBox.Show("Kein Gerät erkannt.", "Fehler!",
+                MessageBox.Show("Kein MIDI-Gerät erkannt.", "Fehler!",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else
@@ -80,8 +80,6 @@ namespace NoZe_Main
                         MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            
-            
         }
 
         /// <summary>
