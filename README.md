@@ -6,4 +6,4 @@ Auch wenn ich es dank MIT Lizenz nicht müsste, verweise ich dennoch auf die San
 
 Ich habe nie wirklich eine schöne Doku gemacht, hab das einfach nur so nebenbei mal runterprogrammiert.
 
-Das Repo steht unter der "Boost Software License - Version 1.0 - August 17th, 2003" mehr Infos in der License.md.
+Das Repo steht unter der "r3ne Software License - Version 1.0 - August 05th, 2018" mehr Infos in der License.md.
