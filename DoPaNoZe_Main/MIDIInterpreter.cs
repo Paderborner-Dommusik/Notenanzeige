@@ -54,7 +54,7 @@ namespace NoZe_Main
                     context = SynchronizationContext.Current;
                     inDevice = new InputDevice(0);
 
-                    if(views.midiDebug.isActive == true)
+                    if (views.midiDebug.isActive == true)
                     {
                         inDevice.ChannelMessageReceived += views.midiDebug.activeInstance.HandleChannelMessageReceived;
                         inDevice.SysCommonMessageReceived += views.midiDebug.activeInstance.HandleSysCommonMessageReceived;
@@ -70,7 +70,7 @@ namespace NoZe_Main
                         inDevice.SysRealtimeMessageReceived += HandleSysRealtimeMessageReceived;
                         inDevice.Error += new EventHandler<ErrorEventArgs>(inDevice_Error);
                     }
-                    
+
 
                     StartRecording(); //Lets just pretend everything is fine \o/
                 }
@@ -150,16 +150,37 @@ namespace NoZe_Main
         {
             context.Post(delegate (object dummy)
             {
-                NoZe_Main.MainWindow.ActiveInstance.SwitchNote(Convert.ToInt32(e.Message.Data1));
+                //NoZe_Main.MainWindow.ActiveInstance.SwitchNote(Convert.ToInt32(e.Message.Data1));
 
-                if(e.Message.Command.ToString() == "NoteOn")
-                {
-                    NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
-                }
+                //Do not uncomment. Seriously.
+                //MessageBox.Show(e.Message.Command.ToString());
+
+
+
+                //MessageBox.Show("Note: " + e.Message.Data1.ToString() + ", Velo: " + e.Message.Data2.ToString());
+
+                if (views.Viewbase.launchpad_mode)
+                    if (Convert.ToInt32(e.Message.Data2.ToString()) > 0)
+                    {
+                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
+                    }
+                    else
+                    {
+                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
+                    }
                 else
                 {
-                    NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
+                    if (e.Message.Command.ToString() == "NoteOn")
+                    {
+                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
+                    }
+                    else
+                    {
+                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
+                    }
+
                 }
+
                 //e.Message.Command = DOITNAAAAUH
                 //e.Message.MessageType = what happend? o.O
                 //e.Message.Data1 = ID

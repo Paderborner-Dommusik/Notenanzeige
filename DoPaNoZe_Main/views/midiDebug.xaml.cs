@@ -11,7 +11,7 @@ namespace NoZe_Main.views
     /// </summary>
     /// 
 
-       
+
     public partial class midiDebug : Viewbase
     {
         public static bool isActive = false;

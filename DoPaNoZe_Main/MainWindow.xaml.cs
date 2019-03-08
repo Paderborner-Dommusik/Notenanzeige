@@ -1,14 +1,12 @@
 ﻿using Microsoft.Win32;
 using NoZe_Main.views;
 using System;
-using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
 
 
 namespace NoZe_Main
 {
-    
+
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
@@ -18,7 +16,7 @@ namespace NoZe_Main
         private static Viewbase activeInstance;
 
         public static Viewbase ActiveInstance { get => activeInstance; set => activeInstance = value; }
-        
+
         /// <summary>
         /// Loads MainWindow, saves Instance to static mainWindowInstance
         /// </summary>
@@ -34,9 +32,9 @@ namespace NoZe_Main
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
-            
 
-            
+
+
 
 
 
@@ -56,8 +54,8 @@ namespace NoZe_Main
                 MessageBox.Show("Programm muss zur Lizensierung als Administrator gestartet sein", "Fehler beim Lizensieren", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return null;
             }
-            
-               
+
+
         }
 
         /// <summary>
@@ -70,15 +68,16 @@ namespace NoZe_Main
             try
             {
                 RegistryKey SoftwareKey = Registry.LocalMachine.OpenSubKey("Software", true);
-            RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.noze");
+                RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.noze");
 
-            AppNameKey.SetValue(key, value);
+                AppNameKey.SetValue(key, value);
                 return true;
             }
-            catch {
+            catch
+            {
                 return false;
             }
-            
+
         }
 
         /// <summary>
@@ -96,9 +95,9 @@ namespace NoZe_Main
         /// <param name="e"></param>
         private void _Loaded(object sender, RoutedEventArgs e)
         {
-            
+
         }
-        
+
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
 
@@ -165,12 +164,12 @@ namespace NoZe_Main
         {
             if (getRegVal("licensekey") == null)
             {
-                if(setRegVal("licensekey", "DOM-000TEST"))
+                if (setRegVal("licensekey", "DOM-000TEST"))
                 {
                     MessageBox.Show("Die Lizenz -DOM-000TEST- wurde aktiviert", "Lizenz aktiviert", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
-                { MessageBox.Show("Lizenz konnte nicht aktiviert werden.", "Lizenzfehler", MessageBoxButton.OK, MessageBoxImage.Information);}
+                { MessageBox.Show("Lizenz konnte nicht aktiviert werden.", "Lizenzfehler", MessageBoxButton.OK, MessageBoxImage.Information); }
             }
 
         }
@@ -179,13 +178,13 @@ namespace NoZe_Main
         {
             MessageBoxResult mbr = System.Windows.MessageBox.Show("Achtung! Hierdurch wird eine Diagnose Sitzung gestartet, fortfahren?", "Diagnosesitzung", MessageBoxButton.YesNo, MessageBoxImage.Exclamation);
 
-            if(mbr == MessageBoxResult.Yes)
+            if (mbr == MessageBoxResult.Yes)
             {
                 views.midiDebug.isActive = true;
                 InitInstance(views.midiDebug.activeInstance = new midiDebug(false));
             }
-            
-            
+
+
         }
 
         private void MidiDebug_MouseRightButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -219,9 +218,14 @@ namespace NoZe_Main
             {
                 this.Show();
             }
-                        
+
         }
 
-        
+        private void Label_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Viewbase.launchpad_mode = !Viewbase.launchpad_mode;
+            MessageBox.Show("Launchpad Mode: " + Viewbase.launchpad_mode.ToString(), "Launchpad Modus", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+        }
     }
 }

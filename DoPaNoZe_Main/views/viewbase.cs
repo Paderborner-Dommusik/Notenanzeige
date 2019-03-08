@@ -7,7 +7,8 @@ namespace NoZe_Main.views
     public class Viewbase : Window
     {
         public Dictionary<int, Image> midiToView = new Dictionary<int, Image>();
-        
+        public static bool launchpad_mode = false;
+
         //Instance of the system Controller
         private Controller systemController;
 
@@ -16,6 +17,7 @@ namespace NoZe_Main.views
             //Init midiToView
             systemController = new Controller();
             systemController.Run();
+
         }
 
         public void RefreshView()
@@ -25,6 +27,7 @@ namespace NoZe_Main.views
 
             //Show note Grid for selected Mode
             SetNoteOn(-1);
+
         }
 
 
