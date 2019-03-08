@@ -44,7 +44,7 @@ namespace NoZe_Main
         {
             if (InputDevice.DeviceCount == 0)
             {
-                MessageBox.Show("Kein MIDI-Gerät erkannt.", "Fehler!",
+                MessageBox.Show("Keyboard anschließen!.", "Keyboard Fehler!",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else
