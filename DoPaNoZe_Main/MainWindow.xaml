@@ -17,7 +17,7 @@
         <Rectangle Fill="#FFF4F4F5"  Width="212" Margin="341,130,341,73"/>
 
         <Label Content="Standard" Margin="421,140,384,291"/>
-        
+
         <Button x:Name="normal_m3" Content="Es / c" Margin="360,343,477.6,86.4" Click="Normal_m3_Click"/>
         <Button x:Name="normal_m2" Content="B / g" Margin="360,296,477.6,133.4" Click="Normal_m2_Click" />
         <Button x:Name="normal_m1" Content="F /d" Margin="360,251,477.6,178.4" Click="Normal_m1_Click"/>
@@ -35,9 +35,11 @@
         <Rectangle Fill="#FFF4F4F5" Width="212" Margin="583,183,99,73"/>
         <Label Content="Sonstiges" Margin="655,191,152,236" MouseDoubleClick="Label_MouseDoubleClick"/>
 
-        <Button x:Name="lizensierung" Content="Lizenzsierung" Margin="627,247,152,182" Click="Lizensierung_Click" ToolTip="Lizenz aktivieren / Informationen abrufen" Cursor="None" IsEnabled="False" />
-        <Button x:Name="midiDebug" Content="MIDI Fehlersuche" Margin="627,296,152,133" Click="MidiDebug_Click" MouseRightButtonUp="MidiDebug_MouseRightButtonUp" IsEnabled="False" ToolTip="Treiber und Zuweisungsfehler finden" Cursor="No" />
-       
+        <Button x:Name="lizensierung" Content="Lizenzsierung" Margin="627,246,152,183" Click="Lizensierung_Click" ToolTip="Lizenz aktivieren / Informationen abrufen" Cursor="None" IsEnabled="False" />
+        <Button x:Name="midiDebug" Content="MIDI Fehlersuche" Margin="627,295,152,134" Click="MidiDebug_Click" MouseRightButtonUp="MidiDebug_MouseRightButtonUp" IsEnabled="False" ToolTip="Treiber und Zuweisungsfehler finden" Cursor="No" />
+        <Button x:Name="midiLaunchpad" Content="Launchpad Modus" Margin="627,342,152,87" MouseRightButtonUp="MidiDebug_MouseRightButtonUp" IsEnabled="True" ToolTip="Treiber und Zuweisungsfehler finden" Cursor="No" Click="midiLaunchpad_Click" />
+
+
         <Label Content="1" Margin="421,258,416.6,178.4" HorizontalContentAlignment="Center"/>
         <Label Content="2" Margin="421,304,416.6,133.4" HorizontalContentAlignment="Center"/>
         <Label Content="3" Margin="421,350,416.6,86.4" HorizontalContentAlignment="Center"/>

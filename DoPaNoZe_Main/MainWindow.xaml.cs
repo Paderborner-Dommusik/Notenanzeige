@@ -223,9 +223,14 @@ namespace NoZe_Main
 
         private void Label_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+            
+
+        }
+
+        private void midiLaunchpad_Click(object sender, RoutedEventArgs e)
+        {
             Viewbase.launchpad_mode = !Viewbase.launchpad_mode;
             MessageBox.Show("Launchpad Mode: " + Viewbase.launchpad_mode.ToString(), "Launchpad Modus", MessageBoxButton.OK, MessageBoxImage.Warning);
-
         }
     }
 }
