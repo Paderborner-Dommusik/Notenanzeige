@@ -1,7 +1,7 @@
 # Noten-Anzeige
 ## Werkzeug zum Lehrenund Visualisieren von Intervallen und Akkorden
 
-https://fs.r3ne.de/img/banner.png
+![alt text](https://fs.r3ne.de/img/banner.png "Notenanzeige Logo und Banner")
 
 
 ## Installationsanleitung
@@ -10,12 +10,12 @@ https://fs.r3ne.de/img/banner.png
 3. Das erste gefundene MIDI Instrument wird als Eingabegerät genutzt
 
 ## Bedienung
-https://fs.r3ne.de/img/2019-08-21_21-51-16.png
+![alt text](https://fs.r3ne.de/img/2019-08-21_21-51-16.png "Notenanzeige Hauptmenü")
 1. MIDI Gerät anschließen und Software starten (in beliebiger Reihenfolge)
 2. im Hauptmenü eine Darstellungsart auswählen
 3. durch drücken der Tasten am Midi Keyboard leuchten die entsprechenden Noten bzw. Noten und Symbole auf
 
-https://fs.r3ne.de/img/2019-08-21_21-58-26.png
+![alt text](https://fs.r3ne.de/img/2019-08-21_21-58-26.png "Notenanzeige Es-Dur / c-moll Ansicht")
 
 
 Credits:
