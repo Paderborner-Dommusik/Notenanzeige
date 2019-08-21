@@ -1,5 +1,5 @@
 # Noten-Anzeige
-## Werkzeug zum Lehrenund Visualisieren von Intervallen und Akkorden
+## Werkzeug zum Lehren und Visualisieren von Intervallen und Akkorden
 
 ![alt text](https://fs.r3ne.de/img/banner.png "Notenanzeige Logo und Banner")
 
