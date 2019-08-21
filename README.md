@@ -19,5 +19,5 @@
 
 
 Credits:
-https://paderborner-dommusik.de (for financing and ordering)
-https://github.com/tebjan/Sanford.Multimedia.Midi (modified slightly and used as r3ne.Multimedia.Midi)
+- https://paderborner-dommusik.de (for financing and ordering)
+- https://github.com/tebjan/Sanford.Multimedia.Midi (modified slightly and used as r3ne.Multimedia.Midi)
