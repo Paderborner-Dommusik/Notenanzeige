@@ -46,7 +46,7 @@
         <Label Content="b" Margin="360,214,477.6,224.4" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
         <Label Content="#" Margin="482,214,355.6,222.4" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
 
-        <Label Content="github.com/Paderborner-Dommusik/Notenanzeige" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,437,0,0" Width="322"/>
+        <Label Content="github.com/r3ne-pew/Notenanzeige" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,437,0,0" Width="322"/>
 
 
     </Grid>
