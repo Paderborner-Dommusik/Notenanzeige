@@ -158,29 +158,31 @@ namespace NoZe_Main
 
 
                 //MessageBox.Show("Note: " + e.Message.Data1.ToString() + ", Velo: " + e.Message.Data2.ToString());
-
-                if (views.Viewbase.launchpad_mode)
-                    if (Convert.ToInt32(e.Message.Data2.ToString()) > 0)
+                if (NoZe_Main.MainWindow.IsInMainWindow)
+                {
+                    switch (Convert.ToInt32(e.Message.Data1))
                     {
-                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
+                        default:
+                            break;
                     }
-                    else
-                    {
-                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
-                    }
+                }
                 else
                 {
-                    if (e.Message.Command.ToString() == "NoteOn")
+                    if (views.Viewbase.launchpad_mode)
                     {
-                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
+                        if (Convert.ToInt32(e.Message.Data2.ToString()) > 0)
+                            NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
+                        else
+                            NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
                     }
                     else
                     {
-                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
+                        if (e.Message.Command.ToString() == "NoteOn")
+                            NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
+                        else
+                            NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
                     }
-
                 }
-
                 //e.Message.Command = DOITNAAAAUH
                 //e.Message.MessageType = what happend? o.O
                 //e.Message.Data1 = ID

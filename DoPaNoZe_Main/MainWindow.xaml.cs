@@ -12,10 +12,11 @@ namespace NoZe_Main
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        private static bool isInMainWindow = true;
         private static Viewbase activeInstance;
 
         public static Viewbase ActiveInstance { get => activeInstance; set => activeInstance = value; }
+        public static bool IsInMainWindow { get => isInMainWindow; set => isInMainWindow = value; }
 
         /// <summary>
         /// Loads MainWindow, saves Instance to static mainWindowInstance
@@ -31,13 +32,7 @@ namespace NoZe_Main
         /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
-
-
-
-
-
-
+            
         }
 
         private string getRegVal(string key)
