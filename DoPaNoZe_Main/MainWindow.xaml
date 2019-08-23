@@ -37,7 +37,7 @@
 
         <Button x:Name="lizensierung" Content="Lizenzsierung" Margin="627,246,152,183" Click="Lizensierung_Click" ToolTip="Lizenz aktivieren / Informationen abrufen" Cursor="None" IsEnabled="False" />
         <Button x:Name="midiDebug" Content="MIDI Fehlersuche" Margin="627,295,152,134" Click="MidiDebug_Click" MouseRightButtonUp="MidiDebug_MouseRightButtonUp" IsEnabled="False" ToolTip="Treiber und Zuweisungsfehler finden" Cursor="No" />
-        <Button x:Name="midiLaunchpad" Content="Launchpad Modus" Margin="627,342,152,87" MouseRightButtonUp="MidiDebug_MouseRightButtonUp" IsEnabled="True" ToolTip="Treiber und Zuweisungsfehler finden" Cursor="No" Click="midiLaunchpad_Click" />
+        <Button x:Name="midiLaunchpad" Content="Debug Modus" Margin="627,342,152,87" MouseRightButtonUp="MidiDebug_MouseRightButtonUp" IsEnabled="True" ToolTip="Treiber und Zuweisungsfehler finden" Cursor="No" Click="midiLaunchpad_Click" />
 
 
         <Label Content="1" Margin="421,258,416.6,178.4" HorizontalContentAlignment="Center"/>
