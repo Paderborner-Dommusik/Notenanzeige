@@ -128,9 +128,9 @@ namespace NoZe_Main
                     InitInstance(new normal_afis());
                     break;
                 case 84:
-                    MIDIInterpreterInstanceMW.Destroy();
-                    MIDIInterpreterInstanceMW = null;
-                    this.Close();
+                    //MIDIInterpreterInstanceMW.Destroy();
+                    //MIDIInterpreterInstanceMW = null;
+                    //this.Close();
                     break;
                 default:
                     break;
