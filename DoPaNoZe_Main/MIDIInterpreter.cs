@@ -166,23 +166,21 @@ namespace NoZe_Main
                             break;
                     }
                 }
+                else if (views.Viewbase.launchpad_mode)
+                {
+                    if (Convert.ToInt32(e.Message.Data2.ToString()) > 0)
+                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
+                    else
+                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
+                }
                 else
                 {
-                    if (views.Viewbase.launchpad_mode)
-                    {
-                        if (Convert.ToInt32(e.Message.Data2.ToString()) > 0)
-                            NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
-                        else
-                            NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
-                    }
+                    if (e.Message.Command.ToString() == "NoteOn")
+                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
                     else
-                    {
-                        if (e.Message.Command.ToString() == "NoteOn")
-                            NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
-                        else
-                            NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
-                    }
+                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
                 }
+
                 //e.Message.Command = DOITNAAAAUH
                 //e.Message.MessageType = what happend? o.O
                 //e.Message.Data1 = ID

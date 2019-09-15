@@ -98,6 +98,11 @@ namespace NoZe_Main
 
         }
 
+        public void handleMidiKeyboard(int midiID)
+        {
+
+        }
+
         private void Simple_standard_Click(object sender, RoutedEventArgs e)
         {
             InitInstance(new simple_mainview());
