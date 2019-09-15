@@ -4,7 +4,7 @@ using r3ne.Multimedia.Midi;
 using System.Threading;
 using System.Windows;
 
-namespace NoZe_Main.views
+namespace Notenleuchte_Main.views
 {
     /// <summary>
     /// Interaktionslogik für midiDebug.xaml

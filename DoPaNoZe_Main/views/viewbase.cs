@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace NoZe_Main.views
+namespace Notenleuchte_Main.views
 {
     public class Viewbase : Window
     {
@@ -34,21 +34,30 @@ namespace NoZe_Main.views
 
         public void SetNoteOn(int midiID)
         {
-            midiToView.TryGetValue(midiID, out Image glowElement);
-            if (glowElement != null)
+            if (midiID == 84)
             {
-                glowElement.Opacity = 1.0;
+                this.Close();
+            }
+            else
+            {
+                midiToView.TryGetValue(midiID, out Image glowElement);
+                if (glowElement != null)
+                {
+                    glowElement.Opacity = 1.0;
+                }
             }
         }
 
         public void SetNoteOff(int midiID)
         {
+
             midiToView.TryGetValue(midiID, out Image glowElement);
             if (glowElement != null)
             {
                 glowElement.Opacity = 0.0;
             }
         }
+
 
 
         /// <summary>

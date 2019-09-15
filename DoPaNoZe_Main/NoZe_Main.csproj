@@ -7,8 +7,8 @@
     <ProjectGuid>{4820C1AF-3D35-4A9B-A1BE-86D47443D7BB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NoZe_Main</RootNamespace>
-    <AssemblyName>NoZe_Main</AssemblyName>
+    <RootNamespace>Notenleuchte_Main</RootNamespace>
+    <AssemblyName>Notenleuchte_Main</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,9 +49,11 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Notenleuchte_Main.xml</DocumentationFile>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>NoZe_Main.App</StartupObject>
+    <StartupObject>Notenleuchte_Main.App</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>logo.ico</ApplicationIcon>
@@ -530,9 +532,6 @@
     <Resource Include="ressources\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="logo.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="ressources\logo-transp.png" />
   </ItemGroup>
   <ItemGroup>
@@ -543,6 +542,9 @@
     <Folder Include="ressources\normal\p1\" />
     <Folder Include="ressources\normal\p2\" />
     <Folder Include="ressources\normal\p3\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

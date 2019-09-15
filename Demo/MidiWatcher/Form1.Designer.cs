@@ -1,4 +1,4 @@
-namespace NoZe_View
+namespace Notenleuchte_View
 {
     partial class Form1
     {
@@ -150,7 +150,7 @@ namespace NoZe_View
             this.Controls.Add(this.channelMessageGroupBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "NoZe";
+            this.Text = "Notenleuchte";
             this.channelMessageGroupBox.ResumeLayout(false);
             this.sysExGroupBox.ResumeLayout(false);
             this.systemCommonGroupBox.ResumeLayout(false);

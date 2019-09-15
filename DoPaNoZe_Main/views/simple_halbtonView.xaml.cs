@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace NoZe_Main.views
+namespace Notenleuchte_Main.views
 {
     /// <summary>
     /// Interaktionslogik für simple_halbtonView.xaml

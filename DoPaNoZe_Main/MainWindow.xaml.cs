@@ -1,10 +1,10 @@
 ﻿using Microsoft.Win32;
-using NoZe_Main.views;
+using Notenleuchte_Main.views;
 using System;
 using System.Windows;
 
 
-namespace NoZe_Main
+namespace Notenleuchte_Main
 {
 
     /// <summary>
@@ -14,9 +14,12 @@ namespace NoZe_Main
     {
         private static bool isInMainWindow = true;
         private static Viewbase activeInstance;
+        private static MainWindow mWInstance = null;
+        private static MIDIInterpreter MIDIInterpreterInstanceMW;
 
         public static Viewbase ActiveInstance { get => activeInstance; set => activeInstance = value; }
         public static bool IsInMainWindow { get => isInMainWindow; set => isInMainWindow = value; }
+        public static MainWindow MWInstance { get => mWInstance; set => mWInstance = value; }
 
         /// <summary>
         /// Loads MainWindow, saves Instance to static mainWindowInstance
@@ -32,7 +35,8 @@ namespace NoZe_Main
         /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            MWInstance = this;
+            MIDIInterpreterInstanceMW = MIDIInterpreter.GetInstance();
         }
 
         private string getRegVal(string key)
@@ -41,7 +45,7 @@ namespace NoZe_Main
             {
                 RegistryKey SoftwareKey = Registry.LocalMachine.OpenSubKey("Software", true);
 
-                RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.noze");
+                RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.Notenleuchte");
                 return Convert.ToString(AppNameKey.GetValue(key, ""));
             }
             catch
@@ -63,7 +67,7 @@ namespace NoZe_Main
             try
             {
                 RegistryKey SoftwareKey = Registry.LocalMachine.OpenSubKey("Software", true);
-                RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.noze");
+                RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.Notenleuchte");
 
                 AppNameKey.SetValue(key, value);
                 return true;
@@ -95,7 +99,42 @@ namespace NoZe_Main
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            Environment.Exit(0);
+        }
 
+        public void handleMidiKeyboard(int midiID)
+        {
+            switch (midiID)
+            {
+                case 36:
+                    InitInstance(new normal_ca());
+                    break;
+                case 41:
+                    InitInstance(new normal_fd());
+                    break;
+                case 43:
+                    InitInstance(new normal_ge());
+                    break;
+                case 46:
+                    InitInstance(new normal_bg());
+                    break;
+                case 38:
+                    InitInstance(new normal_dh());
+                    break;
+                case 39:
+                    InitInstance(new normal_esc());
+                    break;
+                case 45:
+                    InitInstance(new normal_afis());
+                    break;
+                case 84:
+                    //MIDIInterpreterInstanceMW.Destroy();
+                    //MIDIInterpreterInstanceMW = null;
+                    //this.Close();
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void Simple_standard_Click(object sender, RoutedEventArgs e)
@@ -199,6 +238,10 @@ namespace NoZe_Main
         private void InitInstance(Viewbase type)
         {
             this.Hide();
+            isInMainWindow = false;
+            MIDIInterpreterInstanceMW.Destroy();
+            MIDIInterpreterInstanceMW = null;
+
             activeInstance = null;
             activeInstance = type;
             activeInstance.ShowDialog();
@@ -211,6 +254,8 @@ namespace NoZe_Main
             }
             else
             {
+                isInMainWindow = true;
+                MIDIInterpreterInstanceMW = MIDIInterpreter.GetInstance();
                 this.Show();
             }
 
