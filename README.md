@@ -1,21 +1,21 @@
-# Noten-Anzeige
+# Notenleuchte
 ## Werkzeug zum Lehren und Visualisieren von Intervallen und Akkorden
 
-![alt text](https://fs.r3ne.de/img/banner.png "Notenanzeige Logo und Banner")
+![alt text](https://fs.r3ne.de/img/banner.png "Notenleuchte Logo und Banner")
 
 
 ## Installationsanleitung
-1. unter https://github.com/r3ne-pew/Notenanzeige/releases/latest die aktuelle Version herunterladen
-2. Die mitgelieferte Libary, sowie die Notenanzeige.exe Datei in einem Ordner ablegen und von dort aus starten
+1. unter https://github.com/r3ne-pew/Notenleuchte/releases/latest die aktuelle Version herunterladen
+2. Die mitgelieferte Libary, sowie die Notenleuchte.exe Datei in einem Ordner ablegen und von dort aus starten
 3. Das erste gefundene MIDI Instrument wird als Eingabegerät genutzt
 
 ## Bedienung
-![alt text](https://fs.r3ne.de/img/2019-08-21_21-51-16.png "Notenanzeige Hauptmenü")
+![alt text](https://fs.r3ne.de/img/2019-08-21_21-51-16.png "Notenleuchte Hauptmenü")
 1. MIDI Gerät anschließen und Software starten (in beliebiger Reihenfolge)
 2. im Hauptmenü eine Darstellungsart auswählen
 3. durch drücken der Tasten am Midi Keyboard leuchten die entsprechenden Noten bzw. Noten und Symbole auf
 
-![alt text](https://fs.r3ne.de/img/2019-08-21_21-58-26.png "Notenanzeige Es-Dur / c-moll Ansicht")
+![alt text](https://fs.r3ne.de/img/2019-08-21_21-58-26.png "Notenleuchte Es-Dur / c-moll Ansicht")
 
 
 Credits:
