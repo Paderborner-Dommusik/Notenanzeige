@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace NoZe_Main.views
+namespace Notenleuchte_Main.views
 {
     /// <summary>
     /// Interaktionslogik für simple_mainview.xaml

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace NoZe_Main
+namespace Notenleuchte_Main
 {
     /// <summary>
     /// Interaktionslogik für "App.xaml"

@@ -4,7 +4,7 @@ using r3ne.Multimedia.Midi;
 using System.Threading;
 using System.Windows;
 
-namespace NoZe_Main
+namespace Notenleuchte_Main
 {
     class MIDIInterpreter
     {
@@ -150,7 +150,7 @@ namespace NoZe_Main
         {
             context.Post(delegate (object dummy)
             {
-                //NoZe_Main.MainWindow.ActiveInstance.SwitchNote(Convert.ToInt32(e.Message.Data1));
+                //Notenleuchte_Main.MainWindow.ActiveInstance.SwitchNote(Convert.ToInt32(e.Message.Data1));
 
                 //Do not uncomment. Seriously.
                 //MessageBox.Show(e.Message.Command.ToString());
@@ -158,23 +158,23 @@ namespace NoZe_Main
 
 
                 //MessageBox.Show("Note: " + e.Message.Data1.ToString() + ", Velo: " + e.Message.Data2.ToString());
-                if (NoZe_Main.MainWindow.IsInMainWindow)
+                if (Notenleuchte_Main.MainWindow.IsInMainWindow)
                 {
-                    NoZe_Main.MainWindow.MWInstance.handleMidiKeyboard(e.Message.Data1);
+                    Notenleuchte_Main.MainWindow.MWInstance.handleMidiKeyboard(e.Message.Data1);
                 }
                 else if (views.Viewbase.launchpad_mode)
                 {
                     if (Convert.ToInt32(e.Message.Data2.ToString()) > 0)
-                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
+                        Notenleuchte_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
                     else
-                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
+                        Notenleuchte_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
                 }
                 else
                 {
                     if (e.Message.Command.ToString() == "NoteOn")
-                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
+                        Notenleuchte_Main.MainWindow.ActiveInstance.SetNoteOn(Convert.ToInt32(e.Message.Data1));
                     else
-                        NoZe_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
+                        Notenleuchte_Main.MainWindow.ActiveInstance.SetNoteOff(Convert.ToInt32(e.Message.Data1));
                 }
 
                 //e.Message.Command = DOITNAAAAUH

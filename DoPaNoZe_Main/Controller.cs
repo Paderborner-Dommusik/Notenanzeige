@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NoZe_Main
+namespace Notenleuchte_Main
 {
     /// <summary>
     /// Device Connection Controller for easy Window Access

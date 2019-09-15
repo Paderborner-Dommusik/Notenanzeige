@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using r3ne.Multimedia;
 using r3ne.Multimedia.Midi;
 
-namespace NoZe_View
+namespace Notenleuchte_View
 {
     public partial class Form1 : Form
     {

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace NoZe_Main.views
+namespace Notenleuchte_Main.views
 {
     public class Viewbase : Window
     {

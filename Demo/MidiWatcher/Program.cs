@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace NoZe_View
+namespace Notenleuchte_View
 {
     static class Program
     {

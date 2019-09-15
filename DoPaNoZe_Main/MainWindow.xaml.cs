@@ -1,10 +1,10 @@
 ﻿using Microsoft.Win32;
-using NoZe_Main.views;
+using Notenleuchte_Main.views;
 using System;
 using System.Windows;
 
 
-namespace NoZe_Main
+namespace Notenleuchte_Main
 {
 
     /// <summary>
@@ -45,7 +45,7 @@ namespace NoZe_Main
             {
                 RegistryKey SoftwareKey = Registry.LocalMachine.OpenSubKey("Software", true);
 
-                RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.noze");
+                RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.Notenleuchte");
                 return Convert.ToString(AppNameKey.GetValue(key, ""));
             }
             catch
@@ -67,7 +67,7 @@ namespace NoZe_Main
             try
             {
                 RegistryKey SoftwareKey = Registry.LocalMachine.OpenSubKey("Software", true);
-                RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.noze");
+                RegistryKey AppNameKey = SoftwareKey.CreateSubKey("de.r3ne.projects.Notenleuchte");
 
                 AppNameKey.SetValue(key, value);
                 return true;
@@ -99,7 +99,7 @@ namespace NoZe_Main
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-
+            Environment.Exit(0);
         }
 
         public void handleMidiKeyboard(int midiID)

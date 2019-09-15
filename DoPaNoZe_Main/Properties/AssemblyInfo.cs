@@ -7,12 +7,12 @@ using System.Windows;
 // Allgemeine Informationen über eine Assembly werden über die folgenden 
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
-[assembly: AssemblyTitle("Notenanzeige")]
-[assembly: AssemblyDescription("Notenanzeige der Dommusik Paderborn")]
+[assembly: AssemblyTitle("Notenleuchte")]
+[assembly: AssemblyDescription("Notenleuchte der Dommusik Paderborn")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Entwickelt für die Dommusik Paderborn von Rene Henkenius (r3ne.de media)")]
-[assembly: AssemblyProduct("Notenanzeige")]
-[assembly: AssemblyCopyright("Copyright r3ne.de media 2018")]
+[assembly: AssemblyProduct("Notenleuchte")]
+[assembly: AssemblyCopyright("Copyright r3ne.de media 2019")]
 [assembly: AssemblyTrademark("r3ne.de media")]
 [assembly: AssemblyCulture("")]
 
