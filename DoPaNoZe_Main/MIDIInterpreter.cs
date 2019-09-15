@@ -160,11 +160,7 @@ namespace NoZe_Main
                 //MessageBox.Show("Note: " + e.Message.Data1.ToString() + ", Velo: " + e.Message.Data2.ToString());
                 if (NoZe_Main.MainWindow.IsInMainWindow)
                 {
-                    switch (Convert.ToInt32(e.Message.Data1))
-                    {
-                        default:
-                            break;
-                    }
+                    NoZe_Main.MainWindow.MWInstance.handleMidiKeyboard(e.Message.Data1);
                 }
                 else if (views.Viewbase.launchpad_mode)
                 {
