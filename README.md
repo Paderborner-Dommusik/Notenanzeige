@@ -1,7 +1,7 @@
 # Notenleuchte
 ## Werkzeug zum Lehren und Visualisieren von Intervallen und Akkorden
 
-![alt text](Notenleuchte/DoPaNoZe_Main/ressources/banner.png "Notenleuchte Logo und Banner")
+![alt text](https://github.com/r3ne-pew/Notenleuchte/blob/master/DoPaNoZe_Main/ressources/banner.png "Notenleuchte Logo und Banner")
 
 
 ## Installationsanleitung
