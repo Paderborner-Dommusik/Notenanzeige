@@ -147,6 +147,16 @@ namespace Notenleuchte_Main
             InitInstance(new simple_halbtonView());
         }
 
+        private void simple_DoReMi_3_Click(object sender, RoutedEventArgs e)
+        {
+            InitInstance(new simple_doremi3());
+        }
+
+        private void simple_DoReMi_5_Click(object sender, RoutedEventArgs e)
+        {
+            InitInstance(new simple_doremi5());
+        }
+
         //3b, Es-Dur / C-Moll
         private void Normal_m3_Click(object sender, RoutedEventArgs e)
         {
@@ -272,5 +282,7 @@ namespace Notenleuchte_Main
             Viewbase.launchpad_mode = !Viewbase.launchpad_mode;
             MessageBox.Show("Launchpad Mode: " + Viewbase.launchpad_mode.ToString(), "Launchpad Modus", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
+
+        
     }
 }

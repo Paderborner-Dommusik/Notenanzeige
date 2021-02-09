@@ -1,0 +1,36 @@
+﻿<src:Viewbase x:Class="Notenleuchte_Main.views.simple_doremi5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notenleuchte_Main.views"
+        xmlns:src="clr-namespace:Notenleuchte_Main.views"
+        mc:Ignorable="d"
+        Title="Notenleuchte DoReMi 5-Linien" Height="1080" Width="1920" WindowState="Maximized" Loaded="Window_Loaded" Closing="Window_Closing" WindowStyle="ThreeDBorderWindow">
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform/>
+                <TranslateTransform X="-100" Y="-120"/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Image x:Name="note_5" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi5/note_5.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_6" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi5/note_6.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_7" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi5/note_7.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_8" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi5/note_8.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_9" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi5/note_9.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_10" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi5/note_10.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_11" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi5/note_11.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_12" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi5/note_12.png" Height="1845" Grid.ColumnSpan="2"/>
+
+
+        <Image x:Name="back" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi5/back.png" Height="1845" Grid.ColumnSpan="2"/>
+
+        <Label Loaded="_Loaded" Grid.ColumnSpan="2" Margin="0,0,-0.4,-0.4">
+
+        </Label>
+
+    </Grid>
+</src:Viewbase>

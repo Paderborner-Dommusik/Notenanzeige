@@ -106,6 +106,12 @@
     <Compile Include="views\normal_ge.xaml.cs">
       <DependentUpon>normal_ge.xaml</DependentUpon>
     </Compile>
+    <Compile Include="views\simple_doremi3.xaml.cs">
+      <DependentUpon>simple_doremi3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\simple_doremi5.xaml.cs">
+      <DependentUpon>simple_doremi5.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\simple_halbtonView.xaml.cs">
       <DependentUpon>simple_halbtonView.xaml</DependentUpon>
     </Compile>
@@ -159,6 +165,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="views\normal_ge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\simple_doremi3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\simple_doremi5.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -545,6 +559,25 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ressources\simple\DoReMi5\back.png" />
+    <Resource Include="ressources\simple\DoReMi5\note_10.png" />
+    <Resource Include="ressources\simple\DoReMi5\note_11.png" />
+    <Resource Include="ressources\simple\DoReMi5\note_12.png" />
+    <Resource Include="ressources\simple\DoReMi5\note_5.png" />
+    <Resource Include="ressources\simple\DoReMi5\note_6.png" />
+    <Resource Include="ressources\simple\DoReMi5\note_7.png" />
+    <Resource Include="ressources\simple\DoReMi5\note_8.png" />
+    <Resource Include="ressources\simple\DoReMi5\note_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ressources\simple\DoReMi3\back.png" />
+    <Resource Include="ressources\simple\DoReMi3\note_5.png" />
+    <Resource Include="ressources\simple\DoReMi3\note_6.png" />
+    <Resource Include="ressources\simple\DoReMi3\note_7.png" />
+    <Resource Include="ressources\simple\DoReMi3\note_8.png" />
+    <Resource Include="ressources\simple\DoReMi3\note_9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

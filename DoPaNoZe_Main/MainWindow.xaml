@@ -30,8 +30,11 @@
 
         <Rectangle Fill="#FFF4F4F5"  Width="212" Margin="99,183,583,73"/>
         <Label Content="Einfache Ansichten" Margin="150,189,619,246"/>
-        <Button x:Name="simple_standard" Content="Standard" Margin="147,247,631.6,182.4" Click="Simple_standard_Click"/>
-        <Button x:Name="simple_halftone" Content="Halbton" Margin="147,296,631.6,133.4" Click="Simple_halftone_Click"/>
+        <Button x:Name="simple_standard" Content="Standard" Margin="147,226,632,203" Click="Simple_standard_Click"/>
+        <Button x:Name="simple_halftone" Content="Halbton" Margin="147,275,632,154" Click="Simple_halftone_Click"/>
+        <Button x:Name="simple_DoReMi_3" Content="DoReMi 3" Margin="123,324,700,105" Click="simple_DoReMi_3_Click"/>
+        <Button x:Name="simple_DoReMi_5" Content="DoReMi 5" Margin="209,324,614,105" Click="simple_DoReMi_5_Click"/>
+
         <Rectangle Fill="#FFF4F4F5" Width="212" Margin="583,183,99,73"/>
         <Label Content="Sonstiges" Margin="655,191,152,236" MouseDoubleClick="Label_MouseDoubleClick"/>
 
