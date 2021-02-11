@@ -44,6 +44,7 @@ namespace Notenleuchte_Main.views
                 midiToView.Add(64, note_7);
                 midiToView.Add(65, note_8);
                 midiToView.Add(67, note_9);
+                midiToView.Add(69, note_10);
             }
 
             //Turn all notes Off.

@@ -30,10 +30,10 @@
 
         <Rectangle Fill="#FFF4F4F5"  Width="212" Margin="99,183,583,73"/>
         <Label Content="Einfache Ansichten" Margin="150,189,619,246"/>
-        <Button x:Name="simple_standard" Content="Standard" Margin="147,226,632,203" Click="Simple_standard_Click"/>
-        <Button x:Name="simple_halftone" Content="Halbton" Margin="147,275,632,154" Click="Simple_halftone_Click"/>
-        <Button x:Name="simple_DoReMi_3" Content="DoReMi 3" Margin="123,324,700,105" Click="simple_DoReMi_3_Click"/>
-        <Button x:Name="simple_DoReMi_5" Content="DoReMi 5" Margin="209,324,614,105" Click="simple_DoReMi_5_Click"/>
+        <Button x:Name="simple_standard" Content="Standard" Margin="126,230,608,199" Click="Simple_standard_Click"/>
+        <Button x:Name="simple_halftone" Content="Halbton" Margin="126,277,608,152" Click="Simple_halftone_Click"/>
+        <Button x:Name="simple_DoReMi_3" Content="DoReMi 3" Margin="126,324,694,105" Click="simple_DoReMi_3_Click"/>
+        <Button x:Name="simple_DoReMi_5" Content="DoReMi 5" Margin="216,324,608,105" Click="simple_DoReMi_5_Click"/>
 
         <Rectangle Fill="#FFF4F4F5" Width="212" Margin="583,183,99,73"/>
         <Label Content="Sonstiges" Margin="655,191,152,236" MouseDoubleClick="Label_MouseDoubleClick"/>
@@ -49,7 +49,8 @@
         <Label Content="b" Margin="360,214,477.6,224.4" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
         <Label Content="#" Margin="482,214,355.6,222.4" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
 
-        <Label Content="github.com/r3ne-pew/Notenleuchte" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,437,0,0" Width="322"/>
+        <Label Content="github.com/r3ne-pew/Notenleuchte" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,435,0,0" Width="322"/>
+        <Label Content="powered by r3ne.de" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,435,10,0" Width="118"/>
 
 
     </Grid>

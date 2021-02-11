@@ -21,6 +21,7 @@
         <Image x:Name="note_7" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi3/note_7.png" Height="1845" Grid.ColumnSpan="2"/>
         <Image x:Name="note_8" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi3/note_8.png" Height="1845" Grid.ColumnSpan="2"/>
         <Image x:Name="note_9" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi3/note_9.png" Height="1845" Grid.ColumnSpan="2"/>
+        <Image x:Name="note_10" Margin="0,0,-163.4,-771.4" VerticalAlignment="Top" Source="../ressources/simple/DoReMi3/note_10.png" Height="1845" Grid.ColumnSpan="2"/>
 
 
 
