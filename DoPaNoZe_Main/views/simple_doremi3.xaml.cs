@@ -34,6 +34,7 @@ namespace Notenleuchte_Main.views
                 midiToView.Add(34, note_7);
                 midiToView.Add(36, note_8);
                 midiToView.Add(38, note_9);
+                midiToView.Add(39, note_10);
             }
             else
             {
